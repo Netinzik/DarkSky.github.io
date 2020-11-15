@@ -1,0 +1,40 @@
+body{
+	background: url(fundo.jpg);
+	background-size: cover;
+}
+.imagemuca{
+	background: url(smurfdomuca.jpg);
+	background-size: cover;
+	width: 400px;
+	height: 400px;
+	margin: 0 auto;
+}
+.para1{
+	color: white;
+	font-size: 20px;
+	text-align: center;
+	margin: 0 auto;
+}
+.text{
+	color: white;
+	font-size: 30px;
+	text-align: center;
+	margin: 0 auto;
+	text-shadow: 1px 2px orange;
+}
+a{
+	color: white;
+}
+.voltar{
+	text-align: center;
+	color: black;
+}
+footer{
+	width: 200px;
+	height: auto;
+	margin: 0 auto;
+	background-color: orange;
+	border: 1px solid black;
+	text-align: center;
+	margin-top: 50px;
+}
