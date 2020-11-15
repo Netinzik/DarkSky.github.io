@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+<head>
+<title>PCW-3</title>
+<meta charset="utf-8"/>
+</head>
+<body>
+    <p id="msg"></p> 
+</body>
+<script>
+  var skills = ["Javascript", "ReactJS", "React Native"];
+  function temHabilidade(habi) {
+    if(habi.indexOf("Javascript")==-1){
+          return false
+      	}
+      	else{
+        	return true
+      	}
+	}
+  resultado = temHabilidade(skills);
+  document.getElementById("msg").innerHTML = resultado; 
+</script>
+</html>
