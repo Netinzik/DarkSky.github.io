@@ -9,6 +9,13 @@ body{
 	height: 400px;
 	margin: 0 auto;
 }
+.imagemuca2{
+	background: url(smurfdomuca2.jpg);
+	background-size: cover;
+	width: 400px;
+	height: 400px;
+	margin: 0 auto;
+}
 .para1{
 	color: white;
 	font-size: 20px;
