@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+<head>
+<title>Desafio 3 e 4</title>
+<meta charset="utf-8"/>
+<link rel="stylesheet" type="text/css" href="../secundarios/style3.css">
+</head>
+<body>
+    <ul id="list">
+    </ul>
+    <label for="newName">Nome: </label>
+    <input type="text" id="newName">
+    <button onclick="mais1()">Adicionar nome</button>
+    <br><a class="retorno" href="../primeirojs.html">Voltar</a>
+</body>
+<script>
+ 	var nomes = ["PEDRÃO", "NETÃO", "TIGRÃO"];   
+    function mais1() {
+        let newName = document.getElementById("newName").value;
+        nomes.push(newName);
+        let itens = document.querySelectorAll(".remover");
+        for(let x=0; x<=itens.length-1; x++){
+        itens[x].remove();
+    }
+    let input = document.getElementById("newName").value="";
+    preencher();
+    }
+    function preencher(){
+        let ul = document.getElementById("list");
+        for(let x=0; x<=nomes.length-1; x++){
+        let nome = document.createTextNode(nomes[x]);
+        let li = document.createElement("li");
+        li.classList.add("remover");
+        li.appendChild(nome);
+        ul.appendChild(li)
+        }
+    }
+</script>
+</html>
