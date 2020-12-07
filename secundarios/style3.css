@@ -44,3 +44,16 @@ input{
     width: 400px;
     height: 20px;
 }
+li{
+    list-style: none;
+}
+.quadrados {
+    height: 100vh;
+    width: 100vw;
+}
+.green {
+    width: 100px;
+    height: 100px;
+    margin: 1rem 1rem;
+    display: inline-block;
+}
