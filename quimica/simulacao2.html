@@ -1,0 +1,86 @@
+<!doctype html>
+<html>
+<head>
+<title>Simulação 2</title>
+<meta charset="utf-8"/>
+<link rel="stylesheet" type="text/css" href="../secundarios/style3.css">
+</head>
+<body>
+  <p>Relações diretas em uma reação química</p>
+	<p>Insira o valor em litros de H2 ou litros de H2O e depois selecione correlação desejada.</p>
+	<input type="number" name="valor" id="item2">
+	<button onclick="reacaoh2();">Litros de H2 forma quanto Litros de H2O?</button>
+	<button onclick="reacaoh2o();">Litros de H2O é formado a partir de quantos Litros de H2?</button>
+	<p id="formula2"></p>
+	<p id="conta2"></p>
+	<p id="resul2"></p>
+	<p id="resultado2"></p>
+	<p>Insira o valor em litros de H2O ou litros de O2 e depois selecione correlação desejada.</p>
+	<input type="number" name="valor" id="item2-1">
+	<button onclick="reacaoo2();">Litro de O2 forma quantos Litros de H2O?</button>
+	<button onclick="reacaoH2o();">Litro de O2 é formado a partir de quantos Litros de H2O?</button>
+	<p id="formula2-1"></p>
+	<p id="conta2-1"></p>
+	<p id="resul2-1"></p>
+	<p id="resultado2-1"></p>
+  <br><a class="retorno" href="../primeiroqm.html">Voltar</a>
+	<script type="text/javascript">
+		function reacaoh2 (){
+			var v1h2 = parseFloat(44.8);
+			var v1h2o = parseFloat(44.8);
+			var vh2 = document.getElementById("item2").value;
+			var vh2o = (vh2 * v1h2o)/v1h2o;
+			var form2 = "Se 44.8L de H2 formam 44.8L de H2O,<br>44.8L de H2 ---> 44.8L de H2O<br>"+vh2+"L de H2 ---> XL H2O";
+			var conta2 = "XL de H2O = ("+v1h2o+" x "+vh2+") /"+v1h2o;
+			var res2 = "Resultado: XL de H2O= "+vh2o;
+			var result2 = vh2+"L de H2 forma "+vh2o+"L de H2O";
+			document.getElementById("formula2").innerHTML = form2;
+			document.getElementById("conta2").innerHTML = conta2;
+			document.getElementById("resul2").innerHTML = res2;
+			document.getElementById("resultado2").innerHTML = result2;
+		}
+		function reacaoh2o (){
+			var v1h2 = parseFloat(44.8);
+			var v1h2o = parseFloat(44.8);
+			var vh2o = document.getElementById("item2").value;
+			var vh2 = (vh2o * v1h2)/v1h2o;
+			var form2 = "Se 44.8L de H2O necessita de 44.8L de H2 para ser formado,<br>44.8L H2O ---> 44.8L de H2<br>"+vh2o+"L H2O ---> XL de H2";
+			var conta2 = "XL de H2 = ("+v1h2+" x "+vh2o+") /"+v1h2o;
+			var res2 = "Resultado: XL H2= "+vh2;
+			var result2 = vh2o+"L de H2O são formados a partir de "+vh2+"L de H2";
+			document.getElementById("formula2").innerHTML = form2;
+			document.getElementById("conta2").innerHTML = conta2;
+			document.getElementById("resul2").innerHTML = res2;
+			document.getElementById("resultado2").innerHTML = result2;
+		}
+		function reacaoo2 (){
+			var v1o2 = parseFloat(11.2);
+			var v1h2o = parseFloat(22.4);
+			var vo2 = document.getElementById("item2-1").value;
+			var vh2o = (vo2 * v1h2o)/v1o2;
+			var form2 = "Se 11.2L de O2 formam 22.4L de H2O,<br>11.2L de O2 ---> 22.4L de H2O<br>"+vo2+"L de O2 ---> XL de H2O";
+			var conta2 = "XL de H2O = ("+v1h2o+" x "+vo2+") /"+v1o2;
+			var res2 = "Resultado: XL de H2O= "+vh2o;
+			var result2 = vo2+"L de O2 formam "+vh2o+"L de H2O";
+			document.getElementById("formula2-1").innerHTML = form2;
+			document.getElementById("conta2-1").innerHTML = conta2;
+			document.getElementById("resul2-1").innerHTML = res2;
+			document.getElementById("resultado2-1").innerHTML = result2;
+		}
+		function reacaoH2o(){
+			var v1o2 = parseFloat(11.2);
+			var v1h2o = parseFloat(22.4);
+			var vh2o = document.getElementById("item2-1").value;
+			var vo2 = (vh2o * v1o2)/v1h2o;
+			var form2 = "Se 22.4L de H2O necessitam de 11.2L de O2 para ser formado,<br>22.4L de H2O ---> 11.2L de O2<br>"+vh2o+"L de H2O ---> XL O2";
+			var conta2 = "XL de O2 = ("+vh2o+" x "+v1o2+") /"+v1h2o;
+			var res2 = "Resultado: XL de O2= "+vo2;
+			var result2 = vh2o+"L de H2O são formados a partir de "+vo2+"L de O2";
+			document.getElementById("formula2-1").innerHTML = form2;
+			document.getElementById("conta2-1").innerHTML = conta2;
+			document.getElementById("resul2-1").innerHTML = res2;
+			document.getElementById("resultado2-1").innerHTML = result2;
+		}
+	</script>
+</body>
+</html>
