@@ -30,6 +30,9 @@
 				$("#genero").val("");
 				$("#autor").val("");
 			})
+			$("#botao_apagar").click(function (){
+				$("#acervo").empty();
+			})
 			$("input[name=salvar_bd]").click(function (){
 				$('.livro').each(function (idx, obj){
 					let titulo = $(obj).children("td:nth-child(1)").text();
@@ -78,10 +81,13 @@
 			<th></th>
 		</tr>
 	</table>
+	<button id="botao_apagar">Limpar a lista</button>
+	<br>
 	<br>
 	<form action="https://rafaelescalfoni.net/web/livros.php" method="post">
 		<input type="hidden" name="acervo_post">
 		<input type="submit" value="Salvar no BD" name="salvar_bd">
 	</form>
+	<br><a class="retorno" href="../segundojs.html">Voltar</a>
 </body>
 </html>
