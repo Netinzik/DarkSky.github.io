@@ -1,0 +1,165 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Jura', cursive;
+	color: black;
+}
+/*        Fontes
+font-family: 'Akaya Telivigala', cursive;
+font-family: 'Jura', sans-serif;
+*/
+
+/*Estilos Prontos*/
+.container{max-width: 1920px;margin: 0 auto;padding: 0 5%;}
+.clear{clear: both;}
+.selected{font-weight: bold;}
+.w50{width: 50%; float: left;}
+.w33{width: 33.3%; float: left;}
+.w100{width: 100%; position: center;}
+.center{text-align: center;}
+.linksem{text-decoration: none;font-family: inherit;font-size: inherit;color: inherit;}
+/*Fim dos estilos prontos*/
+header{
+	padding: 10px 0 0 0;
+	background-color: #DCDCDC;
+	text-shadow: 1px 1px white;
+}
+.logo{
+	float: left;
+}
+.logo > h2{
+	float: left;
+	font-weight: normal;
+	font-size: 26px;
+	font-weight: bold;
+}
+.logo sub{
+	font-size: 13px;
+	vertical-align: sub;
+}
+.logo a{
+	color: black;
+	text-decoration: none;
+}
+.logo a:hover{
+	text-decoration: underline;
+	cursor: pointer;
+}
+nav li.selected{font-weight: bold;text-decoration: underline;}
+nav{
+	float: right;
+	font-size: 20px;
+}
+nav ul{
+	position: relative;
+	top: 5px;
+}
+nav li{
+	padding:0 10px;
+	display: inline-block;
+}
+nav a{
+	color: black;
+	text-decoration: none;
+}
+nav a:hover{text-decoration: underline;}
+/*Fim do Header*/
+section.banner{
+	width: 100%;
+	padding: 50px 0 250px 0;
+	position: relative;
+	background: url(banner.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	text-align: center;
+}
+section.banner > .container{
+	position: relative;
+	z-index: 1;
+} 
+.camada{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top:0;
+	background-color: black;
+	opacity: 0.8;
+}
+section.banner a{
+	text-decoration: none;
+	color: #078A8A;
+	text-shadow: 1px 1px white;
+	text-align: center;
+	font-size: 100px;
+	font-family: 'Akaya Telivigala', cursive;
+}
+section.banner p{
+	color: white;
+	font-size: 40px;
+	margin-top: 30px;
+	font-family: 'Akaya Telivigala', cursive;
+	text-shadow: 1px 2px black;
+}
+/*Fim do Banner*/
+.sobre_s h2{
+	text-align: center;
+	font-size: 35px;
+	text-shadow: 1px 1px #078A8A;
+}
+.sobre_s p{
+	text-align: justify;
+	font-size: 17px;
+	font-weight: bold;
+}
+.sobre_s fonte{
+	font-size: 16px;
+}
+.sobre_s fonte > a:hover{
+	font-size: 17px;
+	transition: 1.5s;
+}
+/*Fim da matéria*/
+.autor{
+	background-color: #D3D3D3;
+	margin-top: 10px;
+}
+.autor h2{
+	font-size: 40px;
+	font-family: 'Akaya Telivigala', cursive;
+	text-shadow: 1px 1px #078A8A;
+	padding-bottom: 3px;
+}
+.sobre_a{
+	background-color: #F8F8FF;
+}
+.sobre_a h3{font-size: 30px; text-shadow: 1px 1px white;}
+.sobre_a img{
+	width: auto;
+	height: 250px;
+	box-shadow: 10px 10px black;
+}
+.sobre_a ul{list-style: none;}
+.sobre_a h5{
+	font-size: 23px;
+	padding-top: 5px;
+	border-top: 5px solid black;
+}
+.sobre_a li{
+	font-size: 18px;
+	font-weight: bold;
+	padding-bottom: 3px;
+}
+/*Fim do sobre os autores*/
+footer{
+	text-align: center;
+	color: white;
+	font-weight: bold;
+	text-shadow: 1px 1px #078A8A;
+	font-family: 'Akaya Telivigala', cursive;
+	padding: 10px 0;
+	background-color: black;
+}
+/*Fim do Footer*/
