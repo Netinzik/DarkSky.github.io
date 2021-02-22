@@ -163,3 +163,20 @@ footer{
 	background-color: black;
 }
 /*Fim do Footer*/
+/*Do ínicio de Java Script*/
+.js_a{margin-bottom: 40px;}
+.js_a h2{
+	font-family: 'Akaya Telivigala', cursive;
+	font-size: 40px;
+	text-shadow: 1px 1px #078A8A;
+}
+.js_a a{
+	text-decoration: none;
+	font-size: 25px;
+}
+.js_a a:hover{
+	text-decoration: underline;
+	font-size: 27px;
+	font-weight: bold;
+	transition: 3s;
+}

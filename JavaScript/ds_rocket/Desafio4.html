@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+<head>
+<title>Desafio4</title>
+<meta charset="utf-8"/>
+<link rel="stylesheet" type="text/css" href="../secundarios/style3.css">
+</head>
+<body>
+    <h1>4 - Escreva uma função que dado um total de anos de estudo retorna o quão experiente o usuário é:
+// De 0-1 ano: Iniciante.
+// De 1-3 anos: Intermediário.
+// De 3-6 anos: Avançado.
+// De 7 acima: Jedi Master.</h1>
+    <p id="msg"></p>
+    <br><a class="retorno" href="../primeirojs.html">Voltar</a>
+</body>
+<script>
+ function experiencia(anos) { 
+        if(anos<=1){
+         return "iniciante";
+        }
+        else 
+        if(anos > 1 && anos <= 3){
+            return "intermediário";
+        }
+        else
+        if(anos>3 && anos<=6){
+            return "avançado";
+        }
+        else
+        if(anos>=7){
+            return "Jedi Master";
+        }
+    }
+    var anosEstudo = 7;
+    resultado = experiencia(anosEstudo);
+    document.getElementById("msg").innerHTML = resultado; 
+</script>
+</html>
