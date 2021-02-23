@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Laboratório de jQuery 2</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    
+
+    <script>
+        var s_minusculas = /[a-z]/;
+        var s_maiusculas = /[A-Z]/;
+        var s_numeros = /[1-9]/;
+        var s_especiais = /[@#!$%&*()-+.,=]/;
+        $(function () {
+            $("#data").click(function () {
+                if ($("#texto").val() != "") {
+                    let procurar = $("#frase").val();
+                    let substituir = $("#frase2").val();
+                    let texto = $("#texto").val();
+                    let array = texto.split(" ");
+                    for (i = 0; i < array.length; i++) {
+                        if (array[i] == procurar) {
+                            array[i] = substituir;
+                        }
+                    }
+                    let test = ""
+                    test = array.join(" ");
+                    $("#texto1").text(test);
+                    $("#frase").val("");
+                    $("#frase2").val("");
+                    $("#texto").val("");
+                }
+
+                else {
+                    $("#texto1").text("Insira um texto válido");
+                }
+            })
+        })
+    </script>
+</head>
+
+<body>
+    <h4>Substituir palavras em um texto</h4>
+    <input type="text" id="texto" placeholder="Texto" class="maior">
+    <input type="text" id="frase" placeholder="Procurar">
+    <input type="text" id="frase2" placeholder="substituir">
+
+    <button id="data">enviar</button>
+    <p id="texto1"></p>
+    <footer>
+        <a class="retorno" href="../segundojs.html">Voltar</a>
+    </footer>
+</body>
+
+</html>

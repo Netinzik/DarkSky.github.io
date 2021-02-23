@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Laboratório de jQuery 2</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    
+
+    <script>
+        function Vogal(tx) {
+            tx = tx.toUpperCase();
+            if (tx == "A" || tx == "E" || tx == "I" || tx == "O" || tx == "U")
+                return true;
+            return false;
+        }
+        $(function () {
+            $("#vogal").click(function () {
+                let frase = $("#frase").val();
+                let result = "";
+                for (i = 0; i <= frase.length - 1; i++) {
+                    if (Vogal(frase[i]))
+                        result += "<strong>" + frase[i] + "</strong>";
+                    if (Vogal(frase[i]) == 0)
+                        result += frase[i];
+                }
+                $("#texto1").html(result);
+            })
+        })
+    </script>
+</head>
+<body>
+    <h4>Faça um programa que leia uma frase e escreva abaixo marcando as vogais em negrito.</h4>
+    <input type="text" id="frase">
+    <button id="vogal">play</button>
+    <p id="texto1"></p>
+    <footer>
+		<a class="retorno" href="../segundojs.html">Voltar</a>
+	</footer>
+</body>
+
+</html>
