@@ -165,9 +165,14 @@ footer{
 /*Fim do Footer*/
 /*Do ínicio de Java Script*/
 .js_a{margin-bottom: 40px;}
-.js_a h2{
+.js_a h1{
 	font-family: 'Akaya Telivigala', cursive;
-	font-size: 40px;
+	font-size: 35px;
+	text-shadow: 1px 1px #078A8A;
+}
+.js_a h2{
+	font-family: 'Jura', sans-serif;
+	font-size: 30px;
 	text-shadow: 1px 1px #078A8A;
 }
 .js_a a{
@@ -176,7 +181,9 @@ footer{
 }
 .js_a a:hover{
 	text-decoration: underline;
-	font-size: 27px;
-	font-weight: bold;
-	transition: 3s;
+	font-size: 26px;
+	transition: 0.5s;
+}
+.js_a li{
+	list-style-type: none;
 }

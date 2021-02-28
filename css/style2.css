@@ -1,0 +1,98 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Jura', cursive;
+	color: black;
+}
+/*        Fontes
+font-family: 'Akaya Telivigala', cursive;
+font-family: 'Jura', sans-serif;
+*/
+
+/*Estilos Prontos*/
+.container{max-width: 1920px;margin: 0 auto;padding: 0 5%;}
+.clear{clear: both;}
+.selected{font-weight: bold;}
+.w50{width: 50%; float: left;}
+.w33{width: 33.3%; float: left;}
+.w100{width: 100%; position: center;}
+.center{text-align: center;}
+.linksem{text-decoration: none;font-family: inherit;font-size: inherit;color: inherit;}
+/*Fim dos estilos prontos*/
+/*Formatação de Química*/
+.Qm_a{margin-top: 25px;}
+.Qm_a h1, h2{
+	font-size: 30px;
+	font-family: 'Akaya Telivigala', cursive;
+	text-shadow: 1px 1px #078A8A;
+	font-weight: normal;
+}
+.Qm_a p{
+	font-size: 20px;
+	margin-bottom: 5px;
+}
+.Qm_a input{
+	width: 20%;
+	display: inline-block;
+	text-align: center;
+}
+.Qm_a button{width: 10%;}
+.Qm_a button:hover{
+	color: white;
+	background-color: #078A8A;
+	cursor: pointer;
+}
+.Qm_a button.voltar{
+	width: 15%;
+	font-size: 22px;
+}
+.Qm_a button.voltar > a{text-decoration: none;}
+.Qm_a button.voltar:hover{
+	cursor: pointer;
+	background-color: #DCDCDC;
+	font-weight: bolder;
+}
+/*Fim da formatação de Química*/
+/*Formatação de JavaScript*/
+.Js_a{margin-top: 25px;}
+.Js_a h1, h2{
+	font-size: 30px;
+	font-family: 'Akaya Telivigala', cursive;
+	text-shadow: 1px 1px #078A8A;
+	font-weight: normal;
+}
+.Js_a p{
+	font-size: 20px;
+	margin-bottom: 5px;
+}
+.Js_a button.voltar{
+	width: 15%;
+	font-size: 22px;
+}
+.Js_a button.voltar > a{text-decoration: none;}
+.Js_a button.voltar:hover{
+	cursor: pointer;
+	background-color: #DCDCDC;
+	font-weight: bolder;
+}
+.Js_a ul{
+	list-style-type: none;
+}
+.Js_a button:hover{
+	color: white;
+	background-color: #078A8A;
+	cursor: pointer;
+}
+.Js_a input{
+	width: 20%;
+	display: inline-block;
+	text-align: center;
+}
+.Js_a input.submit{border-radius: 8px;}
+.Js_a input.submit:hover{
+	color: white;
+	background-color: #078A8A;
+	cursor: pointer;
+}
+/*Fim da formatação de Química*/
