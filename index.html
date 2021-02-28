@@ -17,8 +17,16 @@
 	<!--Menu-->
 	<header>
 		<div class="container">
-			<div class="logo"><h2>Sebastião Gonçalves Ferreira Neto<a href="https://filipequintanilhaevangelista.github.io/" target="_blank"><sub>Filipe Quintanilha</sub></a></h2></div>
-			<nav>
+			<div class="logo"><h2>Sebastião Neto<a href="https://filipequintanilhaevangelista.github.io/" target="_blank"><sub>Dupla</sub></a></h2></div>
+			<nav class="menu">
+				<ul>
+					<li class="selected"><a href="index.html">Home</a></li>
+					<li><a href="JavaScript/JavaScript.html">JavaScript</a></li>
+					<li><a href="Química/Quimica.html">Química</a></li>
+				</ul>
+			</nav>
+			<nav class="menu-mobile">
+				<h2><i class="fa fa-bars"></i></h2>
 				<ul>
 					<li class="selected"><a href="index.html">Home</a></li>
 					<li><a href="JavaScript/JavaScript.html">JavaScript</a></li>
@@ -47,8 +55,8 @@
 				<fonte>Fonte: <a href="https://pt.wikipedia.org/wiki/JavaScript" target="_blank">Wikipédia</a></fonte>
 			</div>
 			<div class="w50 center sobre_s">
-				<h2>Química</h2>
-				<p style="padding-left: 15px; border-left: 8px solid #DCDCDC;">Química é a ciência que estuda a composição, estrutura, propriedades da matéria, as mudanças sofridas por ela durante as reações químicas e a sua relação com a energia. É considerada uma ciência exata e é chamada muitas vezes de ciência central porque é a ponte entre outras ciências naturais como Física, Matemática e Biologia. A Química possui papel fundamental no desenvolvimento tecnológico, pois a utilização dos conceitos e técnicas dessa ciência permite a obtenção de novas substâncias, além de preocupar-se com a prevenção de danos e exploração sustentável do meio ambiente.<br/>As áreas da Química são agrupadas em quatro grandes divisões, a saber: Química Inorgânica (estuda a matéria inorgânica), Química Orgânica (estuda os compostos de carbono), Físico-Química (compreende os aspectos energéticos e cinéticos dos sistemas químicos e suas transformações em escalas macroscópicas, e atômico-molecular), e Química Analítica (analisa materiais e ajuda a compreender a sua composição e quantidade de sistemas químicos). Áreas interdisciplinares e complementares incluem Bioquímica, Ensino de Química, e Química Ambiental.</p><br/>
+				<h2 class="qm">Química</h2>
+				<p class="especial">Química é a ciência que estuda a composição, estrutura, propriedades da matéria, as mudanças sofridas por ela durante as reações químicas e a sua relação com a energia. É considerada uma ciência exata e é chamada muitas vezes de ciência central porque é a ponte entre outras ciências naturais como Física, Matemática e Biologia. A Química possui papel fundamental no desenvolvimento tecnológico, pois a utilização dos conceitos e técnicas dessa ciência permite a obtenção de novas substâncias, além de preocupar-se com a prevenção de danos e exploração sustentável do meio ambiente.<br/>As áreas da Química são agrupadas em quatro grandes divisões, a saber: Química Inorgânica (estuda a matéria inorgânica), Química Orgânica (estuda os compostos de carbono), Físico-Química (compreende os aspectos energéticos e cinéticos dos sistemas químicos e suas transformações em escalas macroscópicas, e atômico-molecular), e Química Analítica (analisa materiais e ajuda a compreender a sua composição e quantidade de sistemas químicos). Áreas interdisciplinares e complementares incluem Bioquímica, Ensino de Química, e Química Ambiental.</p><br/>
 				<fonte>Fonte: <a href="https://pt.wikipedia.org/wiki/Química#:~:text=Química%20é%20a%20ciência%20que,sua%20relação%20com%20a%20energia." target="_blank">Wikipédia</a></fonte>
 			</div>
 			<div class="clear"></div>
@@ -74,7 +82,7 @@
 				<ul>
 					<li><i class="fa fa-arrow-right"></i> Web Design Express - DankiCode</li>
 					<li><i class="fa fa-arrow-right"></i> Cursando WebMaster Front-end Completo - DankiCode</li>
-					<li><i class="fa fa-arrow-right"></i> Planeja Cursar Desenvolvimento Web Completo - DankiCode</li>
+					<li><i class="fa fa-arrow-right"></i> Planeja Cursar Desenvolvimento Complet - DankiCode</li>
 					<li><i class="fa fa-arrow-right"></i> Planeja Cursar PHP Jedai - DankiCode</li>
 					<li><i class="fa fa-arrow-right"></i> Planeja Cursar Desenvolvimento Web 2.0 - DankiCode</li>
 					<li><i class="fa fa-arrow-right"></i> Planeja Cursar Desenvolvimento de Games Completo - DankiCode</li>
@@ -85,7 +93,7 @@
 					<li><i class="fa fa-arrow-right"></i> CEL: (22) 99289-3641</li>
 				</ul>
 			</div>
-			<div style="padding-left: 15px; padding-bottom: 181px;" class="w50 center sobre_a">
+			<div style="border-left: none;" class="w50 center sobre_a especial fq">
 				<h3>Filipe Quintanilha</h3>
 				<img src="css/filipe.png" style="background-color: white;" />
 				<h5 style="border: none;">Formação</h5>
@@ -110,5 +118,11 @@
 		</div>
 	</footer>
 	<!--Fim footer-->
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script>
+		$('nav.menu-mobile h2').click(function(){
+			$('nav.menu-mobile ul').slideToggle();
+		});
+	</script>
 </body>
 </html>

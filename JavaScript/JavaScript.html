@@ -17,8 +17,16 @@
 	<!--Menu-->
 	<header>
 		<div class="container">
-			<div class="logo"><h2>Sebastião Gonçalves Ferreira Neto<a href="https://filipequintanilhaevangelista.github.io/" target="_blank"><sub>Filipe Quintanilha</sub></a></h2></div>
-			<nav>
+			<div class="logo"><h2>Sebastião Neto<a href="https://filipequintanilhaevangelista.github.io/" target="_blank"><sub>JS</sub></a></h2></div>
+			<nav class="menu">
+				<ul>
+					<li><a href="../index.html">Home</a></li>
+					<li class="selected"><a href="JavaScript.html">JavaScript</a></li>
+					<li><a href="../Química/Quimica.html">Química</a></li>
+				</ul>
+			</nav>
+			<nav class="menu-mobile">
+				<h2><i class="fa fa-bars"></i></h2>
 				<ul>
 					<li><a href="../index.html">Home</a></li>
 					<li class="selected"><a href="JavaScript.html">JavaScript</a></li>
@@ -84,5 +92,11 @@
 		</div>
 	</footer>
 	<!--Fim do Footer-->
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script>
+		$('nav.menu-mobile h2').click(function(){
+			$('nav.menu-mobile ul').slideToggle();
+		});
+	</script>
 </body>
 </html>

@@ -46,24 +46,58 @@ header{
 	text-decoration: underline;
 	cursor: pointer;
 }
-nav li.selected{font-weight: bold;text-decoration: underline;}
-nav{
+nav.menu li.selected{font-weight: bold;text-decoration: underline;}
+nav.menu{
 	float: right;
 	font-size: 20px;
 }
-nav ul{
+nav.menu ul{
 	position: relative;
 	top: 5px;
 }
-nav li{
+nav.menu li{
 	padding:0 10px;
 	display: inline-block;
 }
-nav a{
+nav.menu a{
 	color: black;
 	text-decoration: none;
 }
-nav a:hover{text-decoration: underline;}
+nav.menu a:hover{text-decoration: underline;}
+
+nav.menu-mobile{
+	display: none;
+	float: right;
+}
+
+nav.menu-mobile h2{
+	cursor: pointer;
+}
+nav.menu-mobile ul{
+	display: none;
+	width: 100%;
+	background: white;
+	position: absolute;
+	left: 0;
+	top: 10.8%;
+	z-index: 999;
+	text-align: center;
+}
+
+nav.menu-mobile li{
+	padding:8px 0;
+	border-bottom: 1px solid black;
+}
+
+nav.menu-mobile li.selected{
+	background: rgb(225,225,225);
+}
+
+nav.menu-mobile a{
+	display: block;
+	color: black;
+	text-decoration: none;
+}
 /*Fim do Header*/
 section.banner{
 	width: 100%;
@@ -113,6 +147,10 @@ section.banner p{
 	text-align: justify;
 	font-size: 17px;
 	font-weight: bold;
+}
+.especial{
+	padding-left: 15px; 
+	border-left: 8px solid #DCDCDC;
 }
 .sobre_s fonte{
 	font-size: 16px;
@@ -186,4 +224,32 @@ footer{
 }
 .js_a li{
 	list-style-type: none;
+}
+@media screen and (max-width: 760px){
+	.w50, .w33{
+		width: 100%;
+	}
+	footer{
+		text-align: center;
+	}
+}
+@media screen and (max-width: 720px){
+	nav.menu{display: none;}
+	nav.menu-mobile{
+		display: block;
+	}
+	section.banner, section.js_a{
+		padding-top: 100px;
+	}
+	.sobre_s p.especial{
+		border-left: none;
+	}
+	.sobre_s h2.qm{
+		border-top: 8px solid #DCDCDC;
+		margin-top: 5px;
+	}
+	.fq{
+		padding-top: 5px;
+		border-top: 10px solid black;
+	}
 }
