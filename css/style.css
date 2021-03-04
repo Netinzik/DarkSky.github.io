@@ -225,6 +225,62 @@ footer{
 .js_a li{
 	list-style-type: none;
 }
+/*Fim do JavaScript*/
+/*Química Hidrogenio*/
+header.Hg{
+	padding-bottom: 10px; 
+	border-radius: 0 0 50px 50px;
+	border: 4px solid black;
+}
+.Hg h2{
+	font-weight: normal;
+	font-size: 26px;
+	font-weight: bold;
+}
+.Hg h2 > sub{
+	font-size: 17px;
+	vertical-align: sub;
+	font-weight: bolder;
+	text-shadow: 3px 3px white;
+}
+.Hg div.conteudo h1{
+	font-size: 30px;
+	text-align: center;
+	text-shadow: 1px 1px #078A8A;
+}
+.Hg div.conteudo p{
+	font-size: 15px;
+	text-align: justify;
+	line-height: 1.3;
+}
+.Hg div.conteudo h3{
+	font-size: 20px;
+	text-align: center;
+	text-shadow: 1px 1px white;
+}
+.Hg div.conteudo span{
+	font-size: 16px;
+	font-weight: bold;
+	padding-left: 10px;
+}
+.Hg div.conteudo ul{
+	padding-left: 10px;
+	list-style-type: none;
+}
+.Hg div.conteudo h4{
+	font-size: 15px;
+	text-align: center;
+	text-shadow: 1px 1px white;
+}
+.Hg div.conteudo p.itmid{text-align: center;}
+.bg-gray{
+	background-color: #DCDCDC;
+}
+.bg-white{
+	background-color: white;
+}
+/*Fim do Química Hidrogenio*/
+/*Telas*/
 @media screen and (max-width: 760px){
 	.w50, .w33{
 		width: 100%;

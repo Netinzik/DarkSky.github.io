@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Gás Hidrogênio</title>
+	<meta charset="utf-8">
+	<meta name="author" content="Sebastião Gonçalves Ferreira Neto e Filipe Quintanilha">
+	<meta name="keyword" content="JavaScript, Química, Ensino Médio, Indie" />
+	<meta name="description" content="Site construido para as matérias de Química e JavaScript" />
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximun-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="../../../css/style.css" />
+	<link rel="icon" href="../../../css/quimica.png" type="image/x-icon" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" />
+	<link href="https://fonts.googleapis.com/css2?family=Akaya+Telivigala&family=DotGothic16&family=Jura:wght@300&display=swap" rel="stylesheet" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script>
+    	$(function(){
+			$("#executa1").click(function(){
+				if($("#exercicio1_a").is(":checked"))
+					$("#ativ01").css("background-color","#ffdfd4");
+				if ($("#exercicio1_b").is(":checked"))
+					$("#ativ01").css("background-color","#ffdfd4");
+				if ($("#exercicio1_c").is(":checked"))
+					$("#ativ01").css("background-color","#dbead5");
+				if ($("#exercicio1_d").is(":checked"))
+					$("#ativ01").css("background-color","#ffdfd4");
+				if ($("#exercicio1_e").is(":checked"))
+					$("#ativ01").css("background-color","#ffdfd4");
+				$("#resultado1").html("<br />É importante lembrar que a temperatura deve ser dada obrigatoriamente em kelvin: <p>T (K) = T (ºC) + 273<br />T (K) = 27 + 273<br />T (K) = 300 K<br /><br />T (K) = T (ºC) + 273<br />T (K) = 87 + 273<br />T (K) = 360 K <br /> Utilizando a formula geral dos gases perfeitos, temos: <br /> 700 * 20 /300 = 600 * V<sub>2</sub>/360 <br /> 14.000 /300 = 600*V<sub>2</sub>/360 <br /> 300 * (600 * V<sub>2</sub>) = 14.000 * 360 <br /> 180.000 * V<sub>2</sub> = 5.040.000 <br /> V<sub>2</sub> = 5.040.000/180.000 <br /> <b>V<sub>2</sub> = 28L</b>" );
+			})
+			$("#executa2").click(function(){
+				if($("#exercicio2_a").is(":checked"))
+					$("#ativ02").css("background-color","#ffdfd4");
+				if ($("#exercicio2_b").is(":checked"))
+					$("#ativ02").css("background-color","#ffdfd4");
+				if ($("#exercicio2_c").is(":checked"))
+					$("#ativ02").css("background-color","#ffdfd4");
+				if ($("#exercicio2_d").is(":checked"))
+					$("#ativ02").css("background-color","#dbead5");
+				if ($("#exercicio2_e").is(":checked"))
+					$("#ativ02").css("background-color","#ffdfd4");
+				$("#resultado2").html("</br>Vamos usar a equação da transformação isotérmica dos gases: <br /> P<sub>1</sub> * 1 = (0,90 * P<sub>1</sub>) * V<sub>2</sub> <br /> V<sub>2</sub> = 1P<sub>1</sub> /(0,90 * P<sub>1</sub>) <br /> V<sub>2</sub> = 1 /0,90 <br /> <b>V<sub>2</sub> = 1,111L</b>" );
+			})
+			$("#executa3").click(function(){
+				if($("#exercicio3_a").is(":checked"))
+					$("#ativ03").css("background-color","#ffdfd4");
+				if ($("#exercicio3_b").is(":checked"))
+					$("#ativ03").css("background-color","#dbead5");
+				if ($("#exercicio3_c").is(":checked"))
+					$("#ativ03").css("background-color","#ffdfd4");
+				if ($("#exercicio3_d").is(":checked"))
+					$("#ativ03").css("background-color","#ffdfd4");
+				if ($("#exercicio3_e").is(":checked"))
+					$("#ativ03").css("background-color","#ffdfd4");
+				$("#resultado3").html("<br/>Primeiramente, calculamos a massa molar do gás oxigênio. Para isso, devemos multiplicar a massa atômica do elemento pela sua quantidade de átomos na fórmula: <br /> Massa molar do O<sub>2</sub> = 2,16 <br /> Massa molar do O<sub>2</sub> = 32 g/mol <br /> Calcular a massa molar do gás hidrogênio. Para isso, devemos multiplicar a massa atômica do elemento pela sua quantidade de átomos na fórmula: <br /> Massa molar do H<sub>2</sub> = 2,1 <br /> Massa molar do H<sub>2</sub> = 2 g/mol <br /> Determinar a velocidade de efusão do gás oxigênio. Para isso, devemos utilizar os valores fornecidos na fórmula para cálculo da velocidade de efusão: Este resultado dará V<sub>o2</sub> = 1,5 * 10<sup>4</sup> moléculas /s <br /> Determinar o tempo necessário para sair do reservatório com gás oxigênio o mesmo número de moléculas que saíram do reservatório com gás hidrogênio.Para isso, basta utilizar a seguinte regra de três: <br /> 1,5 * 10<sup>4</sup> moléculas ------------- 1s <br /> 6,0 * 10<sup>4</sup> moléculas ------------- X <br /> 1,5 * 10<sup>4</sup> * X = 6,0 * 10<sup>4</sup> * 1 <br /> X = 6,0 * 10<sup>4</sup> /1,5 * 10<sup>4</sup> <br /> <b>X = 4s</b>");
+			})
+		})
+    </script>
+</head>
+<body>
+	<header class="Hg">
+		<div class="container">
+			<div class="center"><h2>Hidrogênio<sub>Estudo dos Gases</sub></h2></div>
+		</div>
+		<div class="clear"></div>
+	</header>
+	<section style="border: 10px solid #DCDCDC; border-radius: 23px;" class="Hg bg-white">
+		<div class="container conteudo">
+			<h1>Sobre o Hidrogênio</h1>
+			<p>Do grego, a palavra "hidrogênio" é composta pelos termos <i>hydro</i> e <i>genes</i>, que significa gerador de água. O hidrogênio localiza-se na primeira casa da tabela periódica e está representado pela letra <b><i>H</i></b>, sendo este o seu símbolo. Apesar de sua importância, é o elemento mais simples, formado apenas por 1 próton e 0 nêutron.<br/ > Encontrado em estado puro como um elemento químico gasoso, é inflamável, incolor, inodoro, não-metálico e insolúvel em água. Este elemento é raro na atmosfera terrestre, posto que sua densidade muito leve o permite escapar à gravidade da Terra. Todavia, é abundante na superfície do Planeta, na forma de hidrocarbonetos e água, na qual existem dois átomos de hidrogênio para um átomo de oxigênio. Foi através do modelo atômico de Bohr que foi possível explicar o comportamento estável do átomo de hidrogênio.</p>
+			<div>
+				<h1 class="bg-gray">Gases</h1>
+				<p>Gases são compostos moleculares que possuem características como a grande compressibilidade e a capacidade de se expandirem, estes compostos não possuem volume fixo, são miscíveis entre si e em qualquer proporção. Podemos utilizar o Gás Hidrogênio, citato acima, como um bom material de exemplo.</p> 
+				<h3>Gás Ideal</h3>
+				<p>Os gases são substâncias cujas moléculas perdem totalmente a atração entre si e se dispersam muito umas das outras, além disso, estas moléculas estão sempre em movimento desordenado. Este movimento faz com que algumas partículas se choquem quando estão confinadas em algum recipiente, e este choque gera o que chamamos de pressão que o gás exerce sobre determinadas superfícies. O gás que obedece a este princípio é chamado de gás ideal (gás perfeito), mas como isso não ocorre na maioria das vezes, surgem então os Gases reais. O que faz com que os gases reais não se tornem perfeitos é a interação entre suas moléculas.</p>
+				<h3>Variações de Estado</h3>
+				<p>Um gás, seja ele qual for, pode sofrer três tipos de variação: de volume, de temperatura e de pressão. Veja as definições a seguir: </p>
+				<p><span>Volume:</span> É impossível determinar o volume exato de um gás, pois sempre ocupam o volume total do recipiente em que estão confinados;</p>
+				<p><span>Temperatura:</span> Se relaciona com o grau de agitação das partículas, quanto maior a agitação maior será a temperatura do sistema;</p>
+				<p><span>Pressão:</span> A pressão de um gás pode ser definida como a força que o mesmo exerce na direção perpendicular sobre a área de uma dada superfície.</p>
+				<p>Na variação de estado temos duas fórmulas principais: </p>
+				<ul>
+					<li><span>A de Clapeyron:</span> P * V = <i>n</i> * R * T</li>
+					<li><span>A da Lei geral dos gases perfeitos: </span> P1 * V1 / T1 = P2 * V2 / T2</li>
+				</ul>
+				<h3>Transformações Gasosas</h3>
+				<p>As transformações gasosas consistem em submeter uma massa fixa de um gás a diferentes condições enquanto uma grandeza é mantida constante. Os tipos são:</p>
+				<ul>
+					<li><span>Transformação isobárica</span>: mudança com pressão constante;</li>
+					<li><span>Transformação isotérmica</span>: mudança com temperatura constante;</li>
+					<li><span>Transformação isocórica</span>: mudança com volume constante.</li>
+				</ul>
+				<h4>Sobre a Transformação Isobárica</h4>
+				<p>Na transformação isobárica a pressão da massa fixa de um gás é mantida constante, enquanto temperatura e volume variam. A transformação isobárica foi estudada, de forma independente, pelos cientistas Jacques Charles (1746-1823) e Louis Joseph Gay-Lussac (1778-1850). A partir de suas observações, foi formulada a Lei de Charles Gay-Lussac:  <p class="itmid"><i><br />“Quando a pressão de uma massa fixa de gás é constante, seu volume é diretamente proporcional à sua temperatura absoluta.”<br /><br /></i></p>Fórmula para a Lei de Charles Gay-Lussac: V/T = K</p>
+				<h4>Sobre a Transformação Isotérmica</h4>
+				<p>Na transformação isotérmica a temperatura da massa fixa de um gás é mantida constante, enquanto pressão e volume variam. A temperatura é a grandeza que mede o grau de agitação das moléculas, ou seja, sua energia cinética. Este tipo de transformação foi estudado por Robert Boyle (1627-1691), que formulou a lei: <p class="itmid"><i><br />“Quando a temperatura de um gás é constante, a pressão do gás é inversamente proporcional ao seu volume.”<br /><br /></i></p>A Lei de Boyle é expressa matematicamente da seguinte forma: PV = K<sub>2</sub></p>
+				<h4>Sobre a Transformação Isocórica</h4>
+				<p>Na transformação isovolumétrica, isocórica ou isométrica, o volume de um gás é mantido constante, enquanto pressão e temperatura variam. O volume de um gás corresponde ao volume do recipiente que ele ocupa, pois as moléculas preenchem todo o espaço disponível. A transformação com o volume constante foi estudada por Jacques Charles (1746-1823), que postulou o que veio a ser conhecido como Lei de Charles:  <p class="itmid"><i>“<br />Quando o volume de um gás é mantido constante, sua pressão varia na mesma proporção que a temperatura da amostra.” <br /><br /></i></p>O enunciado da Lei de Charles é matematicamente expresso por: P/T = K<sub>3</sub></p>
+			</div>
+		</div>
+	</section>
+	<section class="Hg">
+	  	<div class="container conteudo bg-gray">
+	  		<h1>Exercícios:</h1>
+	    	<div style="padding-right: 10px;" id = "ativ01" class="w33">
+	      		<h3>Questão 01:</h3>
+		        <p>Mediu-se a temperatura de 20 L de gás hidrogênio (H2) e o valor encontrado foi de 27 ºC a 700 mmHg. O novo volume desse gás, a 87 ºC e 600 mmHg de pressão, será de: </p>
+		        <form>
+				    <input type="radio" id="exercicio1_a" name="exercicio1"> a) 75L <br/>
+				    <input type="radio" id="exercicio1_b" name="exercicio1"> b) 75,2L <br/>
+				    <input type="radio" id="exercicio1_c" name="exercicio1"> c) 28L <br/>
+				   	<input type="radio" id="exercicio1_d" name="exercicio1"> d) 40L <br/>
+				   	<input type="radio" id="exercicio1_e" name="exercicio1"> e) 38L <br/><br/>
+				   	<button class="btn btn-primary" type="button" id="executa1"> Resposta </button>
+				</form>
+				<p id="resultado1"></p>
+	      	</div>
+	     	<div style="padding-right: 10px; padding-left: 5px; border-left: 5px solid black;" id = "ativ02" class="w33">
+		        <h3>Questão 02:</h3>
+		        <p>(Cesgranrio-RJ) Você brincou de encher, com ar, um balão de gás, na beira da praia, até um volume de 1 L e o fechou. Em seguida, subiu uma encosta próxima carregando o balão, até uma altitude de 900m, onde a pressão atmosférica é 10% menor que a pressão ao nível do mar. Considerando que a temperatura na praia e na encosta seja mesma, o volume de ar no balão após a subida, será de: </p>
+		        <form>
+				    <input type="radio" id="exercicio2_a" name="exercicio2"> a) 0,8 <br/>
+				    <input type="radio" id="exercicio2_b" name="exercicio2"> b) 0,9 <br/>
+				    <input type="radio" id="exercicio2_c" name="exercicio2"> c) 1,0 <br/>
+				   	<input type="radio" id="exercicio2_d" name="exercicio2"> d) 1,1 <br/>
+				   	<input type="radio" id="exercicio2_e" name="exercicio2"> e) 1,2 <br/><br/>
+				   	<button class="btn btn-primary" type="button" id="executa2"> Resposta </button>
+				</form>
+				<p id="resultado2"></p>
+	      	</div>
+	     	<div style="padding-left: 5px; border-left: 5px solid black;" id = "ativ03" class="w33">
+		      	<h3>Questão 03:</h3>
+		        <p>Um reservatório de uma empresa especializada em gases contém o gás hidrogênio a uma pressão P e uma temperatura T. Sabe-se que esse reservatório apresenta uma perda por difusão de 6,0 . 104 moléculas por segundo. Quando comparado a outro reservatório da empresa contendo o gás oxigênio, nas mesmas condições de pressão e temperatura, podemos dizer que ele perderá o mesmo número de moléculas em qual tempo? (Dados: H = 1 g/mol; O = 16 g/mol) </p>
+		        <form>
+				    <input type="radio" id="exercicio3_a" name="exercicio3" value=""> a) 10s <br/>
+				    <input type="radio" id="exercicio3_b" name="exercicio3" value=""> b) 4s <br/>
+				    <input type="radio" id="exercicio3_c" name="exercicio3" value=""> c) 6s <br/>
+				   	<input type="radio" id="exercicio3_d" name="exercicio3" value=""> d) 2s <br/>
+				   	<input type="radio" id="exercicio3_e" name="exercicio3" value=""> e) 8s <br/><br/>
+				   	<button class="btn btn-primary" type="button" id="executa3"> Resposta </button>
+				</form>
+				<p id="resultado3"></p>
+	      	</div> 
+	  	</div>
+	  	<div class="clear"></div>
+  	</section>
+  	<button style="font-size: 20px; border-radius: 3px;"><a style="text-decoration: none; padding: 20px; " href="../../Quimica.html">Voltar</a></button>
+</body>
