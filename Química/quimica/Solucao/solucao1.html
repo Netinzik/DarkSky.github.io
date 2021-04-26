@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Solução 1</title>
+	<meta charset="utf-8">
+	<meta name="author" content="Sebastião Gonçalves Ferreira Neto e Filipe Quintanilha">
+	<meta name="keyword" content="JavaScript, Química, Ensino Médio, Indie" />
+	<meta name="description" content="Site construido para as matérias de Química e JavaScript" />
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximun-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="../../../css/style.css" />
+	<link rel="icon" href="../../../css/quimica.png" type="image/x-icon" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" />
+	<link href="https://fonts.googleapis.com/css2?family=Akaya+Telivigala&family=DotGothic16&family=Jura:wght@300&display=swap" rel="stylesheet" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script src="solucao1.js"></script>
+</head>
+<body style="background-color: black;">
+	<section class="St">
+		<div class="container center">
+			<h2>Classificação de soluções quanto à quantidade de soluto.</h2>
+			<h3 style="margin-bottom: 15px; border: 4px inset gray; border-radius: 100px;">Água + Cloreto de amónio</h3>
+			<form>
+                <input type="number" id="solvente" placeholder="Quantidade de água(L): "><br><br>
+                <input type="number" id="soluto" placeholder="Quantidade de Cloreto de amónio em gramas: "><br><br><br>
+                <button type="button" id="botao" class="btn"> Calcular </button>
+                <button type="button" id="limpar" class="btn">Limpar</button>
+            </form>
+        <div class="center container">
+        	<p id="resultado"></p>
+        </div>
+		</div>
+	</section>
+	<div class="container center">
+		<button style="font-size: 20px; border-radius: 3px; width: 50%; margin-top: 15px;"><a style="text-decoration: none; padding: 20px; " href="solutos.html">Voltar</a></button>
+	</div>
+</body>
+</html>

@@ -3,7 +3,6 @@
 	padding: 0;
 	box-sizing: border-box;
 	font-family: 'Jura', cursive;
-	color: black;
 }
 /*        Fontes
 font-family: 'Akaya Telivigala', cursive;
@@ -19,6 +18,9 @@ font-family: 'Jura', sans-serif;
 .w100{width: 100%; position: center;}
 .center{text-align: center;}
 .linksem{text-decoration: none;font-family: inherit;font-size: inherit;color: inherit;}
+.bg-gray{background-color: #DCDCDC; color: black;}
+.bg-white{background-color: white; color: black; text-shadow: 1px 1px white; padding-bottom: 5px;}
+.bg-dark{background-color: black; color: white; text-shadow: 1px 1px gray; padding-bottom: 10px;}
 /*Fim dos estilos prontos*/
 header{
 	padding: 10px 0 0 0;
@@ -216,6 +218,7 @@ footer{
 .js_a a{
 	text-decoration: none;
 	font-size: 25px;
+	color: black;
 }
 .js_a a:hover{
 	text-decoration: underline;
@@ -273,13 +276,77 @@ header.Hg{
 	text-shadow: 1px 1px white;
 }
 .Hg div.conteudo p.itmid{text-align: center;}
-.bg-gray{
-	background-color: #DCDCDC;
-}
-.bg-white{
-	background-color: white;
-}
 /*Fim do Química Hidrogenio*/
+/*Inicio da Quimica Solutos*/
+.St{
+	color: white;
+}
+.St > div > div h2.titulo{
+	color: black;
+	padding-bottom: 5px;
+}
+.St p{
+	font-size: 25px;
+	text-align: justify;
+}
+section.St{
+	padding-top: 15px;
+}
+.St img{
+	border-radius: 15%;
+	border: 10px inset gray;
+	width: 500px;
+	height: auto;
+}
+.St h2{
+	color: white;
+	text-shadow: 2px 2px gray;
+	font-size: 30px;
+}
+.St div.stlist p{
+	font-size: 15px;
+	text-align: center;
+	padding-bottom: 7px;
+}
+.St div.stlist h3{
+	font-size: 17px;
+	text-align: center;
+	padding-bottom: 5px;
+}
+.St div.stlist{
+	border-left: 5px inset gray;
+	padding-left: 10px;
+}
+.St a{
+	text-decoration: none;
+	color: black;
+	text-shadow: 2px 2px white;
+	background-color: #add8e6;
+	padding: 10px;
+	border-radius: 10px;
+	font-size: 15px;
+}
+.St a:hover{
+	color: black;
+	text-shadow: 2px 2px white;
+	background-color: #add8e9;
+	border-radius: 12px;
+	font-size: 17px;
+	transition: 2s;
+}
+.St input{
+	width: 50%;
+	margin: 0 auto;
+	font-size: 25px;
+	border-radius: 15px;
+	border: 2px solid gray;
+}
+.St button{
+	width: 25%;
+	font-size: 20px;
+	cursor: pointer;
+}
+/*Fim do Quimica Solutos*/
 /*Telas*/
 @media screen and (max-width: 760px){
 	.w50, .w33{
