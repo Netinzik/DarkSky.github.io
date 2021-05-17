@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Sebastião e Filipe</title>
+	<title>Sebastian's</title>
 	<meta charset="utf-8">
 	<meta name="author" content="Sebastião Gonçalves Ferreira Neto e Filipe Quintanilha">
 	<meta name="keyword" content="JavaScript, Química, Ensino Médio, Indie" />
@@ -9,28 +9,20 @@
 	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximun-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="css/style.css" />
 	<link rel="icon" href="css/pira.jpg" type="image/x-icon" />
-	<link rel="preconnect" href="https://fonts.gstatic.com" />
-	<link href="https://fonts.googleapis.com/css2?family=Akaya+Telivigala&family=DotGothic16&family=Jura:wght@300&display=swap" rel="stylesheet" />
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;1,400;1,500&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
 	<!--Menu-->
 	<header>
 		<div class="container">
-			<div class="logo"><h2>Sebastião Neto<a href="https://filipequintanilhaevangelista.github.io/" target="_blank"><sub>Dupla</sub></a></h2></div>
+			<img class="logo" src="css/pira.jpg" />
 			<nav class="menu">
 				<ul>
-					<li class="selected"><a href="index.html">Home</a></li>
-					<li><a href="JavaScript/JavaScript.html">JavaScript</a></li>
-					<li><a href="Química/Quimica.html">Química</a></li>
-				</ul>
-			</nav>
-			<nav class="menu-mobile">
-				<h2><i class="fa fa-bars"></i></h2>
-				<ul>
-					<li class="selected"><a href="index.html">Home</a></li>
-					<li><a href="JavaScript/JavaScript.html">JavaScript</a></li>
-					<li><a href="Química/Quimica.html">Química</a></li>
+					<li class="selected"><a href="index.html"><i class="fa fa-home"></i>Home</a></li>
+					<li><a href="JavaScript/JavaScript.html"><i class="fa fa-stack-overflow"></i> JavaScript</a></li>
+					<li><a href="Química/Quimica.html"><i class="fa fa-diamond"></i>Química</a></li>
 				</ul>
 			</nav>
 			<div class="clear"></div>
@@ -39,75 +31,73 @@
 	<!--Fim do Menu-->
 	<!--Banner-->
 	<section class="banner">
-		<div class="camada"></div>
 		<div class="container">
-			<h2><a href="http://www.cefet-rj.br/index.php/nova-friburgo" target="_blank">CEFET/NF</a></h2>
-			<p>Olá caro visitante, este site foi desenvolvido por dois estudantes do CEFET/NF, clicando no "CEFET" acima, você será direcionado para o site da instituição. Fique a vontade para navegar em nossos conteúdos.</p>
+			<h1 class="netof">SEBASTIÃO NETO</h1>
 		</div>
 	</section>
 	<!--Fim do Banner-->
 	<!--Sobre a Matéria-->
 	<section>
-		<div class="container">
-			<div class="w50 center sobre_s">
+		<div class="container" style="margin-bottom: 50px;">
+			<div class="center sobre_s">
 				<h2>JavaScript</h2>
-				<p style="padding-right: 15px; ">JavaScript (frequentemente abreviado como JS) é uma linguagem de programação interpretada estruturada, de script em alto nível com tipagem dinâmica fraca e multiparadigma (protótipos, orientado a objeto, imperativo e, funcional). Juntamente com HTML e CSS, o JavaScript é uma das três principais tecnologias da World Wide Web. JavaScript permite páginas da Web interativas e, portanto, é uma parte essencial dos aplicativos da web. A grande maioria dos sites usa, e todos os principais navegadores têm um mecanismo JavaScript dedicado para executá-lo.<br/>Como uma linguagem multiparadigma, o JavaScript suporta estilos de programação orientados a eventos, funcionais e imperativos (incluindo orientado a objetos e prototype-based), apresentando recursos como fechamentos (closures) e funções de alta ordem comumente indisponíveis em linguagens populares como Java e C++. Possui APIs para trabalhar com texto, matrizes, datas, expressões regulares e o DOM, mas a linguagem em si não inclui nenhuma E/S, como instalações de rede, armazenamento ou gráficos, contando com isso no ambiente host em que está embutido.</p><br/><br/>
+				<p>JavaScript (frequentemente abreviado como JS) é uma linguagem de programação interpretada estruturada, de script em alto nível com tipagem dinâmica fraca e multiparadigma (protótipos, orientado a objeto, imperativo e, funcional). Juntamente com HTML e CSS, o JavaScript é uma das três principais tecnologias da World Wide Web. JavaScript permite páginas da Web interativas e, portanto, é uma parte essencial dos aplicativos da web. A grande maioria dos sites usa, e todos os principais navegadores têm um mecanismo JavaScript dedicado para executá-lo.<br/>Como uma linguagem multiparadigma, o JavaScript suporta estilos de programação orientados a eventos, funcionais e imperativos (incluindo orientado a objetos e prototype-based), apresentando recursos como fechamentos (closures) e funções de alta ordem comumente indisponíveis em linguagens populares como Java e C++. Possui APIs para trabalhar com texto, matrizes, datas, expressões regulares e o DOM, mas a linguagem em si não inclui nenhuma E/S, como instalações de rede, armazenamento ou gráficos, contando com isso no ambiente host em que está embutido.</p>
 				<fonte>Fonte: <a href="https://pt.wikipedia.org/wiki/JavaScript" target="_blank">Wikipédia</a></fonte>
+				<div class="container imgs">
+					<img class="w33" src="css/js/img1.jpg">
+					<img class="w33" src="css/js/img2.png">
+					<img class="w33" src="css/js/img3.png">
+				</div>
+				<div class="clear"></div>
 			</div>
-			<div class="w50 center sobre_s">
-				<h2 class="qm">Química</h2>
-				<p class="especial">Química é a ciência que estuda a composição, estrutura, propriedades da matéria, as mudanças sofridas por ela durante as reações químicas e a sua relação com a energia. É considerada uma ciência exata e é chamada muitas vezes de ciência central porque é a ponte entre outras ciências naturais como Física, Matemática e Biologia. A Química possui papel fundamental no desenvolvimento tecnológico, pois a utilização dos conceitos e técnicas dessa ciência permite a obtenção de novas substâncias, além de preocupar-se com a prevenção de danos e exploração sustentável do meio ambiente.<br/>As áreas da Química são agrupadas em quatro grandes divisões, a saber: Química Inorgânica (estuda a matéria inorgânica), Química Orgânica (estuda os compostos de carbono), Físico-Química (compreende os aspectos energéticos e cinéticos dos sistemas químicos e suas transformações em escalas macroscópicas, e atômico-molecular), e Química Analítica (analisa materiais e ajuda a compreender a sua composição e quantidade de sistemas químicos). Áreas interdisciplinares e complementares incluem Bioquímica, Ensino de Química, e Química Ambiental.</p><br/>
+			<div class="center sobre_s">
+				<h2>Química</h2>
+				<p>Química é a ciência que estuda a composição, estrutura, propriedades da matéria, as mudanças sofridas por ela durante as reações químicas e a sua relação com a energia. É considerada uma ciência exata e é chamada muitas vezes de ciência central porque é a ponte entre outras ciências naturais como Física, Matemática e Biologia. A Química possui papel fundamental no desenvolvimento tecnológico, pois a utilização dos conceitos e técnicas dessa ciência permite a obtenção de novas substâncias, além de preocupar-se com a prevenção de danos e exploração sustentável do meio ambiente.<br/>As áreas da Química são agrupadas em quatro grandes divisões, a saber: Química Inorgânica (estuda a matéria inorgânica), Química Orgânica (estuda os compostos de carbono), Físico-Química (compreende os aspectos energéticos e cinéticos dos sistemas químicos e suas transformações em escalas macroscópicas, e atômico-molecular), e Química Analítica (analisa materiais e ajuda a compreender a sua composição e quantidade de sistemas químicos). Áreas interdisciplinares e complementares incluem Bioquímica, Ensino de Química, e Química Ambiental.</p>
 				<fonte>Fonte: <a href="https://pt.wikipedia.org/wiki/Química#:~:text=Química%20é%20a%20ciência%20que,sua%20relação%20com%20a%20energia." target="_blank">Wikipédia</a></fonte>
+				<div class="container imgs">
+					<img class="w33" src="css/quimica/img1.jpg">
+					<img class="w33" src="css/quimica/img2.jpg">
+					<img class="w33" src="css/quimica/img3.jpg">
+				</div>
+				<div class="clear"></div>
 			</div>
-			<div class="clear"></div>
 		</div>
 	</section>
 	<!--Fim da Matéria-->
 	<!--Sobre os Autores-->
 	<section class="autor">
-		<div class="container">
-			<div class="w100 center">
-				<div style="width: 60px"></div>
-				<h2>Equipe</h2>
-			</div>
-			<div style="padding-right: 15px; border-right: 8px solid #D3D3D3;" class="w100 center sobre_a">
+		<div class="banner">
+			<div class="container">
+				<h2>Autor:</h2>
 				<h3>Sebastião Gonçalves Ferreira Neto</h3>
 				<img src="css/sebastian.jpeg"/>
-				<h5 style="border: none;">Formação</h5>
+				<h5>Formação</h5>
 				<ul>
-					<li><i class="fa fa-arrow-right"></i> Ensino Fundamental Completo - Colégio SEI _ Itaocara</li>
-					<li><i class="fa fa-arrow-right"></i> Cursando o 2° Ano integrado ao Técnico em Informática - CEFET/RJ _ Campus de Nova Friburgo</li>
+					<li><i class="fa fa-book"></i> Ensino Fundamental Completo - Sociedade Educacional de Itaocara</li>
+					<li><i class="fa fa-calendar"></i> Cursando o 2° Ano integrado ao Técnico em Informática - CEFET/RJ Campus de Nova Friburgo</li>
 				</ul>
 				<h5>Cursos</h5>
 				<ul>
-					<li><i class="fa fa-arrow-right"></i> Web Design Express - DankiCode</li>
-					<li><i class="fa fa-arrow-right"></i> Cursando WebMaster Front-end Completo - DankiCode</li>
-					<li><i class="fa fa-arrow-right"></i> Planeja Cursar Desenvolvimento Complet - DankiCode</li>
-					<li><i class="fa fa-arrow-right"></i> Planeja Cursar PHP Jedai - DankiCode</li>
-					<li><i class="fa fa-arrow-right"></i> Planeja Cursar Desenvolvimento Web 2.0 - DankiCode</li>
-					<li><i class="fa fa-arrow-right"></i> Planeja Cursar Desenvolvimento de Games Completo - DankiCode</li>
+					<li><i class="fa fa-check-square-o"></i> Web Design Express - DankiCode - <button><a href="documentos/certificado-webdesigner.pdf" target="_blank"><i class="fa fa-file-pdf-o"></i> Certificado</a></button></li>
 				</ul>
-				<h5>Contato</h5>
+				<h5>Contatos</h5>
 				<ul>
-					<li><i class="fa fa-arrow-right"></i> 167netof@gmail.com</li>
-					<li><i class="fa fa-arrow-right"></i> CEL: (22) 99289-3641</li>
+					<li><i class="fa fa-envelope-o"></i> E-mail: <a href="mailto:167netof@gmail.com?subject= Contato feito pelo github - 'ASSUNTO'">167netof@gmail.com</a></li>
+					<li><i class="fa fa-whatsapp"></i> WatsApp: (22) 99289-3641</li>
+					<li><i class="fa fa-instagram"></i> Instagram: <a href="https://www.instagram.com/Fneto200/" target="_blank">@Fneto200</a></li>
+					<li><i class="fa fa-twitter"></i> Twitter: <a href="https://twitter.com/bastiaomano" target="_blank">@Bastiaomano</a></li>
+					<li><i class="fa fa-simplybuilt" style="transform: rotate(180deg);"></i> Discord: Netooo#4338</li>
 				</ul>
 			</div>
+		</div>
 		<div class="clear"></div>
 	</section>
 	<!--Fim do sobre os Autores-->
-	<!--Footer-->
-	<footer class="w100">
-		<div class="container">
-			<p>Todos os direitos reservados<sup>©</sup> - Sebastião Neto & Filipe Quintanilha</p>
-		</div>
-	</footer>
-	<!--Fim footer-->
-	<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<!-- <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 	<script>
 		$('nav.menu-mobile h2').click(function(){
 			$('nav.menu-mobile ul').slideToggle();
 		});
-	</script>
+	</script> -->
 </body>
 </html>

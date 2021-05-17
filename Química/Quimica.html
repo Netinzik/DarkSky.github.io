@@ -9,68 +9,75 @@
 	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximun-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="../css/style.css" />
 	<link rel="icon" href="../css/quimica.png" type="image/x-icon" />
-	<link rel="preconnect" href="https://fonts.gstatic.com" />
-	<link href="https://fonts.googleapis.com/css2?family=Akaya+Telivigala&family=DotGothic16&family=Jura:wght@300&display=swap" rel="stylesheet" />
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;1,400;1,500&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-<body class="js">
+<body>
 	<!--Menu-->
-	<header>
+	<header id="topo">
 		<div class="container">
-			<div class="logo"><h2>Sebastião Neto<sub>Química</sub></h2></div>
+			<img class="logo" src="../css/pira.jpg" />
 			<nav class="menu">
 				<ul>
-					<li><a href="../index.html">Home</a></li>
-					<li><a href="../JavaScript/JavaScript.html">JavaScript</a></li>
-					<li class="selected"><a href="Quimica.html">Química</a></li>
-				</ul>
-			</nav>
-			<nav class="menu-mobile">
-				<h2><i class="fa fa-bars"></i></h2>
-				<ul>
-					<li><a href="../index.html">Home</a></li>
-					<li><a href="../JavaScript/JavaScript.html">JavaScript</a></li>
-					<li class="selected"><a href="Quimica.html">Química</a></li>
+					<li><a href="../index.html"><i class="fa fa-home"></i>Home</a></li>
+					<li><a href="../JavaScript/JavaScript.html"><i class="fa fa-stack-overflow"></i> JavaScript</a></li>
+					<li class="selected"><a href="Quimica.html"><i class="fa fa-diamond"></i>Química</a></li>
 				</ul>
 			</nav>
 			<div class="clear"></div>
 		</div>
 	</header>
 	<!--Fim do Menu-->
+	<section class="banner-qm">
+		<div class="container">
+			<h1>QUÍMICA</h1>
+			<h5><i class="fa fa-group"></i> Collab: Filipe Quintanilha</h5>
+		</div>
+	</section>
 	<!--Conteudo-->
-	<section class="js_a">
-		<div class="container center">
-			<h1 style="font-size: 45px;">Conteúdo<br> Dupla: Filipe Quintanilha</h1>
-			<div class="w33"><h1>Primeiro Trimestre</h1>
+	<section class="conteudo-qm">
+		<div class="container">
+			<h1 class="w50" style="top: 25px;">Primeiro Trimestre <i class="fa fa-hand-o-right"></i></h1>
+			<div class="w50">
 				<h2>Simulações</h2>
-	            <li><a href="./quimica/simulacao1.html">Simulação 1</a></li><br>
-	            <li><a href="./quimica/simulacao2.html">Simulação 2</a></li><br>
-	            <li><a href="./quimica/simulacao3.html">Simulação 3</a></li><br>
+				<ul>
+		            <li class="w33"><button><a href="./quimica/simulacao1.html">Simulação 1</a></button></li>
+		            <li class="w33"><button><a href="./quimica/simulacao2.html">Simulação 2</a></button></li>
+		            <li class="w33"><button><a href="./quimica/simulacao3.html">Simulação 3</a></button></li>
+		        </ul>
+		        <div class="clear"></div>
 			</div>
-			<div class="w33"><h1>Segundo Trimestre</h1>
+			<div class="clear"></div>
+		</div>
+		<div class="container">
+			<div class="w50" style="padding-top: 20px;">
 				<h2>Gases</h2>
-				<li><a href="./quimica/Gases/gases.html">Site</a></li><br>
+				<ul>
+		            <li class="w100" style="padding-left: 340px;"><button><a href="./quimica/Gases/gases.html">Site</a></button></li>
+		        </ul>
+		        <div class="clear"></div>
 			</div>
-			<div class="w33"><h1>Terceiro Trimestre</h1>
+			<h1 class="w50" style="top: 30px;padding-left: 280px;"><i class="fa fa-hand-o-left"></i> Segundo Trimestre</h1>
+			<div class="clear"></div>
+		</div>
+		<div class="container">
+			<h1 class="w50" style="top: 25px;">Terceiro Trimestre <i class="fa fa-hand-o-right"></i></h1>
+			<div class="w50">
 				<h2>Soluções</h2>
-				<li><a href="./quimica/Solucao/solutos.html">Site</a></li><br>
+				<ul>
+		            <li class="w100" style="padding-left: 340px;"><button><a href="./quimica/Solucao/solutos.html">Site</a></button></li>
+		        </ul>
+		        <div class="clear"></div>
 			</div>
+			<div class="clear"></div>
 		</div>
 		<div class="clear"></div>
 	</section>
-	<!--Fim do Conteudo-->
-	<!--Footer-->
-	<footer class="w100">
-		<div class="container">
-			<p>Todos os direitos reservados<sup>©</sup> - Sebastião Neto & Filipe Quintanilha</p>
+	<section class="banner-qm">
+		<div class="container conteudo-qm" style="background: none;">
+			<button style="top: 400px; position: relative; width: 300px;"><a href="#topo">Voltar ao topo</a></button>
 		</div>
-	</footer>
-	<!--Fim footer-->
-	<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-	<script>
-		$('nav.menu-mobile h2').click(function(){
-			$('nav.menu-mobile ul').slideToggle();
-		});
-	</script>
+	</section>
 </body>
 </html>

@@ -7,32 +7,32 @@
 	<meta name="keyword" content="JavaScript, Química, Ensino Médio, Indie" />
 	<meta name="description" content="Site construido para as matérias de Química e JavaScript" />
 	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximun-scale=1.0">
-	<link rel="stylesheet" type="text/css" href="../../css/style2.css" />
+	<link rel="stylesheet" type="text/css" href="../../css/atividades.css" />
 	<link rel="icon" href="../../css/quimica.png" type="image/x-icon" />
-	<link rel="preconnect" href="https://fonts.gstatic.com" />
-	<link href="https://fonts.googleapis.com/css2?family=Akaya+Telivigala&family=DotGothic16&family=Jura:wght@300&display=swap" rel="stylesheet" />
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;1,400;1,500&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-<body>
-	<div class="container center Qm_a">
-		<h1>Reações com reagente limitante</h1><br />
+<body class="background_qm">
+	<div class="atv_qm">
+		<h2>Reações com reagente limitante</h2>
 		<p>Insira no primeiro campo o valor em gramas de H2 e no segundo o valor em gramas de O2 para descobrir qual é o reagente limitante, qual é o excedente e o produto final da correlação de formação de H2O.</p>
-		<input style="width: 15%" type="number" name="valor" id="hidrogenio">
-		<input style="width: 15%;" type="number" name="valor" id="oxigenio"><br />
-		<button style="width: 30.3%;" onclick="limitante();">Qual é o reagente limitante e o excedente?</button>
-		<p id="formula3"></p>
-		<p id="conta3"></p>
-		<p id="resul3"></p>
-		<p id="resultado3"></p>
-		<p id="formula3-1"></p>
-		<p id="conta3-1"></p>
-		<p id="resul3-1"></p>
-		<p id="resultado3-1"></p>
-		<p id ="textofinal"></p>
-		<p id ="produtofinal"></p> 
-	  	<br />
-	  	<button class="voltar"><a href="../Quimica.html">Voltar</a></button>
-		<br />
+        <input type="number" name="valor" id="hidrogenio"><br><br>
+		<input type="number" name="valor" id="oxigenio"><br><br>
+		<button style="width: 300px;" onclick="limitante();">Qual é o reagente limitante e o excedente?</button>
+        <div class="center">
+        	<p id="formula3"></p>
+			<p id="conta3"></p>
+			<p id="resul3"></p>
+			<p id="resultado3"></p>
+			<p id="formula3-1"></p>
+			<p id="conta3-1"></p>
+			<p id="resul3-1"></p>
+			<p id="resultado3-1"></p>
+			<p id ="textofinal"></p>
+			<p id ="produtofinal"></p>
+        </div>
+        <button class="voltar" type="button"><a href="../Quimica.html">Voltar</a></button>
 	</div>
 	<script type="text/javascript">
 		function limitante (){

@@ -2,377 +2,322 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	font-family: 'Jura', cursive;
+	font-family: 'Lora', cursive;
 }
-/*        Fontes
-font-family: 'Akaya Telivigala', cursive;
-font-family: 'Jura', sans-serif;
-*/
 
 /*Estilos Prontos*/
 .container{max-width: 1920px;margin: 0 auto;padding: 0 5%;}
 .clear{clear: both;}
-.selected{font-weight: bold;}
 .w50{width: 50%; float: left;}
 .w33{width: 33.3%; float: left;}
 .w100{width: 100%; position: center;}
 .center{text-align: center;}
-.linksem{text-decoration: none;font-family: inherit;font-size: inherit;color: inherit;}
-.bg-gray{background-color: #DCDCDC; color: black;}
-.bg-white{background-color: white; color: black; text-shadow: 1px 1px white; padding-bottom: 5px;}
-.bg-dark{background-color: black; color: white; text-shadow: 1px 1px gray; padding-bottom: 10px;}
 /*Fim dos estilos prontos*/
+/*Do início de Index.html*/
 header{
-	padding: 10px 0 0 0;
-	background-color: #DCDCDC;
-	text-shadow: 1px 1px white;
+	position: absolute;
+	padding: 10px 0 10px 0;
+	width: 100%;
+	z-index: 1000;
 }
 .logo{
-	float: left;
+	filter: invert(90%);
+	position: relative;
 }
-.logo > h2{
-	float: left;
-	font-weight: normal;
-	font-size: 26px;
-	font-weight: bold;
-}
-.logo sub{
-	font-size: 13px;
-	vertical-align: sub;
-}
-.logo a{
-	color: black;
-	text-decoration: none;
-}
-.logo a:hover{
-	text-decoration: underline;
-	cursor: pointer;
-}
-nav.menu li.selected{font-weight: bold;text-decoration: underline;}
+nav.menu li.selected{text-decoration: underline;}
 nav.menu{
+	position: relative;
+	font-size: 22px;
+	top: 100px;
+	color: white;
 	float: right;
-	font-size: 20px;
 }
 nav.menu ul{
 	position: relative;
-	top: 5px;
+	left: 25px;
+	color: white;
 }
 nav.menu li{
 	padding:0 10px;
 	display: inline-block;
 }
 nav.menu a{
-	color: black;
+	color: white;
 	text-decoration: none;
 }
 nav.menu a:hover{text-decoration: underline;}
-
-nav.menu-mobile{
-	display: none;
-	float: right;
-}
-
-nav.menu-mobile h2{
-	cursor: pointer;
-}
-nav.menu-mobile ul{
-	display: none;
-	width: 100%;
-	background: white;
-	position: absolute;
-	left: 0;
-	top: 10.8%;
-	z-index: 999;
-	text-align: center;
-}
-
-nav.menu-mobile li{
-	padding:8px 0;
-	border-bottom: 1px solid black;
-}
-
-nav.menu-mobile li.selected{
-	background: rgb(225,225,225);
-}
-
-nav.menu-mobile a{
-	display: block;
-	color: black;
-	text-decoration: none;
-}
 /*Fim do Header*/
-section.banner{
+.banner{
 	width: 100%;
+	min-height: 1000px;
 	padding: 50px 0 250px 0;
-	position: relative;
 	background: url(banner.jpg);
+	background-attachment: fixed;
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
 	text-align: center;
 }
-section.banner > .container{
+.netof{
+	color: #f5f5f5;
+	top: 500px;
 	position: relative;
-	z-index: 1;
-} 
-.camada{
-	position: absolute;
-	width: 100%;
-	height: 100%;
-	left: 0;
-	top:0;
-	background-color: black;
-	opacity: 0.8;
-}
-section.banner a{
-	text-decoration: none;
-	color: #078A8A;
-	text-shadow: 1px 1px white;
 	text-align: center;
+	font-weight: normal;
 	font-size: 100px;
-	font-family: 'Akaya Telivigala', cursive;
-}
-section.banner p{
-	color: white;
-	font-size: 40px;
-	margin-top: 30px;
-	font-family: 'Akaya Telivigala', cursive;
-	text-shadow: 1px 2px black;
+	font-style: italic;
+	box-shadow: 10px 5px 5px #F2D194;
 }
 /*Fim do Banner*/
+.sobre_s{
+	margin-top: 50px;
+}
 .sobre_s h2{
 	text-align: center;
 	font-size: 35px;
-	text-shadow: 1px 1px #078A8A;
+	padding-bottom: 10px;
 }
 .sobre_s p{
 	text-align: justify;
 	font-size: 17px;
-	font-weight: bold;
 }
-.especial{
-	padding-left: 15px; 
-	border-left: 8px solid #DCDCDC;
-}
-.sobre_s fonte{
+.sobre_s > fonte{
 	font-size: 16px;
 }
 .sobre_s fonte > a:hover{
 	font-size: 17px;
 	transition: 1.5s;
 }
-/*Fim da matéria*/
-.autor{
-	background-color: #D3D3D3;
-	margin-top: 10px;
-}
-.autor h2{
-	font-size: 40px;
-	font-family: 'Akaya Telivigala', cursive;
-	text-shadow: 1px 1px #078A8A;
-	padding-bottom: 3px;
-}
-.sobre_a{
-	background-color: #F8F8FF;
-}
-.sobre_a h3{font-size: 30px; text-shadow: 1px 1px white;}
-.sobre_a img{
-	width: auto;
-	height: 250px;
-	box-shadow: 10px 10px black;
-}
-.sobre_a ul{list-style: none;}
-.sobre_a h5{
-	font-size: 23px;
-	padding-top: 5px;
-	border-top: 5px solid black;
-}
-.sobre_a li{
-	font-size: 18px;
-	font-weight: bold;
-	padding-bottom: 3px;
-}
-/*Fim do sobre os autores*/
-footer{
-	text-align: center;
-	color: white;
-	font-weight: bold;
-	text-shadow: 1px 1px #078A8A;
-	font-family: 'Akaya Telivigala', cursive;
-	padding: 10px 0;
-	background-color: black;
-}
-/*Fim do Footer*/
-/*Do ínicio de Java Script*/
-.js_a{margin-bottom: 40px;}
-.js_a h1{
-	font-family: 'Akaya Telivigala', cursive;
-	font-size: 35px;
-	text-shadow: 1px 1px #078A8A;
-}
-.js_a h2{
-	font-family: 'Jura', sans-serif;
-	font-size: 30px;
-	text-shadow: 1px 1px #078A8A;
-}
-.js_a a{
-	text-decoration: none;
-	font-size: 25px;
-	color: black;
-}
-.js_a a:hover{
-	text-decoration: underline;
-	font-size: 26px;
-	transition: 0.5s;
-}
-.js_a li{
-	list-style-type: none;
-}
-/*Fim do JavaScript*/
-/*Química Hidrogenio*/
-header.Hg{
-	padding-bottom: 10px; 
-	border-radius: 0 0 50px 50px;
-	border: 4px solid black;
-}
-.Hg h2{
-	font-weight: normal;
-	font-size: 26px;
-	font-weight: bold;
-}
-.Hg h2 > sub{
-	font-size: 17px;
-	vertical-align: sub;
-	font-weight: bolder;
-	text-shadow: 3px 3px white;
-}
-.Hg div.conteudo h1{
-	font-size: 30px;
-	text-align: center;
-	text-shadow: 1px 1px #078A8A;
-}
-.Hg div.conteudo p{
-	font-size: 15px;
-	text-align: justify;
-	line-height: 1.3;
-}
-.Hg div.conteudo h3{
-	font-size: 20px;
-	text-align: center;
-	text-shadow: 1px 1px white;
-}
-.Hg div.conteudo span{
-	font-size: 16px;
-	font-weight: bold;
-	padding-left: 10px;
-}
-.Hg div.conteudo ul{
-	padding-left: 10px;
-	list-style-type: none;
-}
-.Hg div.conteudo h4{
-	font-size: 15px;
-	text-align: center;
-	text-shadow: 1px 1px white;
-}
-.Hg div.conteudo p.itmid{text-align: center;}
-/*Fim do Química Hidrogenio*/
-/*Inicio da Quimica Solutos*/
-.St{
-	color: white;
-}
-.St > div > div h2.titulo{
-	color: black;
-	padding-bottom: 5px;
-}
-.St p{
-	font-size: 25px;
-	text-align: justify;
-}
-section.St{
-	padding-top: 15px;
-}
-.St img{
-	border-radius: 15%;
-	border: 10px inset gray;
-	width: 500px;
-	height: auto;
-}
-.St h2{
-	color: white;
-	text-shadow: 2px 2px gray;
-	font-size: 30px;
-}
-.St div.stlist p{
-	font-size: 15px;
-	text-align: center;
-	padding-bottom: 7px;
-}
-.St div.stlist h3{
-	font-size: 17px;
-	text-align: center;
-	padding-bottom: 5px;
-}
-.St div.stlist{
-	border-left: 5px inset gray;
-	padding-left: 10px;
-}
-.St a{
-	text-decoration: none;
-	color: black;
-	text-shadow: 2px 2px white;
-	background-color: #add8e6;
-	padding: 10px;
-	border-radius: 10px;
-	font-size: 15px;
-}
-.St a:hover{
-	color: black;
-	text-shadow: 2px 2px white;
-	background-color: #add8e9;
-	border-radius: 12px;
-	font-size: 17px;
+.imgs{margin-top: 50px;}
+.imgs > img{
+	height: 400px;
+	padding-left: 25px;
+	box-shadow: 10px 5px 5px #023E73;
+	transition-delay: 1s;
 	transition: 2s;
 }
-.St input{
-	width: 50%;
-	margin: 0 auto;
+.imgs > img:hover{
+	height: 420px;
+	box-shadow: 10px 5px 5px #F28066;
+	transform: rotate(360deg);
+}
+/*Fim da matéria*/
+.autor{color: #F2D6B3;}
+.autor h2{
+	font-size: 40px;
+	padding-bottom: 3px;
+	font-weight: normal;
+}
+.autor h3{
+	font-size: 30px;
+	padding-bottom: 3px;
+	font-weight: normal;
+	margin-bottom: 50px;
+	font-style: italic;
+}
+.autor h5{
 	font-size: 25px;
-	border-radius: 15px;
-	border: 2px solid gray;
+	padding-bottom: 3px;
+	font-weight: normal;
+	margin-bottom: 10px;
+	font-style: italic;
+	text-decoration: underline;
 }
-.St button{
-	width: 25%;
+.autor img{
+	height: 500px;
+	box-shadow: 10px 5px 5px #265573;
+	margin-bottom: 50px;
+}
+.autor ul{
+	list-style-type: none;
+}
+.autor li{
+	line-height: 3.5em;
 	font-size: 20px;
-	cursor: pointer;
 }
-/*Fim do Quimica Solutos*/
+.autor a{
+	text-decoration: none;
+	color: #F28066;
+	font-size: 20px;
+	transition-duration: 2s;
+	transition-delay: 0.6s;
+}
+.autor button{
+	background-color: #f5f5f5;
+	border-radius: 15px;
+	border: 2px inset #265573;
+	padding: 5px;
+	width: 150px;
+	transition-duration: 1.5s;
+	transition-delay: 0.3s;
+}
+.autor button:hover{
+	width: 165px;
+	box-shadow: 4px 5px 15px #F28066;
+	transform: rotate(360deg);
+}
+.autor a:hover{	
+	color: #265573;
+	transform: rotate(360deg);
+}
+/*Fim do sobre os autores*/
+/*Fim do Index.html*/
+/*Do ínicio de Java Script*/
+.banner-js{
+	width: 100%;
+	min-height: 600px;
+	padding: 50px 0 250px 0;
+	background: url(banner-js.jpg);
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	text-align: center;
+}
+.banner-js h1{
+	color: #f5f5f5;
+	top: 300px;
+	position: relative;
+	text-align: center;
+	font-weight: normal;
+	font-size: 100px;
+	font-style: italic;
+	box-shadow: 10px 5px 5px #D99C79;
+}
+/*Fim do Banner*/
+.conteudo{background-color: #fdfdfd; padding: 15px 15px 0 15px;}
+.conteudo > .container{border-bottom: 3px solid #D99C79; padding-bottom: 15px; border-radius: 0 0 15px 15px;}
+.conteudo h1{
+	top: 255px;
+	position: relative;
+	font-size: 50px;
+	text-shadow: 5px 5px 5px #D9A9D1;
+	color: #181D26;
+	font-weight: normal;
+}
+.conteudo h2{
+	text-align: center;
+	margin-bottom: 10px;
+	padding-top: 5px;
+	font-weight: normal;
+	text-shadow: 5px 2px 5px #726273;
+	color: #181D26;
+}
+.conteudo li{
+	list-style-type: none;
+	line-height: 3.5em;
+	padding-left: 65px;
+}
+.conteudo a{
+	text-decoration: none;
+	color: #181D26;
+	font-size: 20px;
+}
+.conteudo button{
+	background-color: #f5f5f5;
+	border-radius: 15px;
+	border: 2px inset #3D4F73;
+	padding: 5px;
+	width: 150px;
+	transition-duration: 1.5s;
+	transition-delay: 0.3s;
+	align-content: center;
+}
+.conteudo button:hover{
+	width: 165px;
+	box-shadow: 4px 5px 15px #D99C9C;
+}
+.conteudo a:hover{	
+	color: #A66FA2;
+	transition-duration: 2s;
+	transition-delay: 0.6s;
+}
+/*Fim do Conteudo*/
+/*Fim do JavaScript.html*/
+/*Do ínicio de Química*/
+.banner-qm{
+	width: 100%;
+	min-height: 600px;
+	padding: 50px 0 250px 0;
+	background: url(banner-qm.jpg);
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	text-align: center;
+}
+.banner-qm h1{
+	color: #f5f5f5;
+	top: 300px;
+	position: relative;
+	text-align: center;
+	font-weight: normal;
+	font-size: 100px;
+	font-style: italic;
+	box-shadow: 10px 5px 5px #36C8D9;
+}
+.banner-qm h5{
+	color: #f5f5f5;
+	top: 310px;
+	position: relative;
+	text-align: center;
+	font-weight: normal;
+	font-size: 40px;
+	font-style: italic;
+	text-align: right;
+}
+/*Fim do Banner*/
+.conteudo-qm{background-color: #fdfdfd; padding: 15px 15px 0 15px;}
+.conteudo-qm > .container{border-bottom: 3px solid #36C8D9; padding-bottom: 15px; border-radius: 0 0 15px 15px;}
+.conteudo-qm h1{
+	top: 255px;
+	position: relative;
+	font-size: 50px;
+	text-shadow: 5px 5px 5px #BABF95;
+	color: #193540;
+	font-weight: normal;
+}
+.conteudo-qm h2{
+	text-align: center;
+	margin-bottom: 10px;
+	padding-top: 5px;
+	font-weight: normal;
+	text-shadow: 5px 2px 5px #176FA6;
+	color: #193540;
+}
+.conteudo-qm li{
+	list-style-type: none;
+	line-height: 3.5em;
+	padding-left: 65px;
+}
+.conteudo-qm a{
+	text-decoration: none;
+	color: #193540;
+	font-size: 20px;
+}
+.conteudo-qm button{
+	background-color: #f5f5f5;
+	border-radius: 15px;
+	border: 2px inset #176FA6;
+	padding: 5px;
+	width: 150px;
+	transition-duration: 1.5s;
+	transition-delay: 0.3s;
+	align-content: center;
+}
+.conteudo-qm button:hover{
+	width: 165px;
+	box-shadow: 4px 5px 15px #36C8D9;
+}
+.conteudo-qm a:hover{	
+	transition-duration: 2s;
+	transition-delay: 0.6s;
+}
+/*Fim do Conteudo*/
+/*Fim do Quimica.html*/
 /*Telas*/
 @media screen and (max-width: 760px){
 	.w50, .w33{
 		width: 100%;
-	}
-	footer{
-		text-align: center;
-	}
-}
-@media screen and (max-width: 720px){
-	nav.menu{display: none;}
-	nav.menu-mobile{
-		display: block;
-	}
-	section.banner, section.js_a{
-		padding-top: 100px;
-	}
-	.sobre_s p.especial{
-		border-left: none;
-	}
-	.sobre_s h2.qm{
-		border-top: 8px solid #DCDCDC;
-		margin-top: 5px;
-	}
-	.fq{
-		padding-top: 5px;
-		border-top: 10px solid black;
 	}
 }
