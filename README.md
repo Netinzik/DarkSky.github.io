@@ -1,1 +1,0 @@
-# Netinzik.github.io
