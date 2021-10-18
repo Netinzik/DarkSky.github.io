@@ -1,0 +1,75 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Lora', cursive;
+}
+
+.background_qm{
+	background: url(fundo-qm.jpg);
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+.atv_qm{
+	position: fixed;
+	color: white;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+	padding: 20px;
+	background-color: rgba(16, 17, 38, 0.9);
+	border-radius: 25px;
+	margin-top: 5px;
+}
+.atv_qm h4{
+	line-height: 3.5em;
+	font-size: 25px;
+	font-weight: normal;
+	text-align: center;
+}
+.atv_qm h2{
+	font-size: 40px;
+	text-shadow: 5px 5px 5px #F2295F;
+	font-weight: normal;
+}
+.atv_qm p{
+	font-size: 20px;
+	line-height: 3.5em;
+	text-align: center;
+}
+.atv_qm input{
+	width: 450px;
+	height: 35px;
+	border-radius: 15px;
+	font-size: 20px;
+	text-align: center;
+	transition: 1.5s;
+	transition-delay: 2s;
+	box-shadow: 4px 5px 15px #F27D72;
+}
+.atv_qm button{
+	background-color: #f5f5f5;
+	border-radius: 15px;
+	border: 2px inset #40043C;
+	padding: 5px;
+	width: 150px;
+	transition-duration: 1.5s;
+	transition-delay: 0.3s;
+	align-content: center;
+}
+.atv_qm button:hover{
+	box-shadow: 4px 5px 15px #F2295F;
+	cursor: pointer;
+}
+.atv_qm a{
+	text-decoration: none;
+	color: #031926;
+}
+.atv_qm > .voltar{
+	position: relative;
+	margin-top: 25px;
+}
+#resultado{line-height: 3.5em;}

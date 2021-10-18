@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Catalogo de Filmes</title>
+  <meta charset="utf-8">
+  <meta name="author" content="Sebastião Gonçalves Ferreira Neto">
+  <meta name="keyword" content="JavaScript, Química, Ensino Médio, Indie" />
+  <meta name="description" content="Site construido para as matérias de Química e JavaScript" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,maximun-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="styleunic.css" />
+  <link rel="icon" href="../../css/js.png" type="image/x-icon" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Akaya+Telivigala&family=DotGothic16&family=Jura:wght@300&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script type="text/javascript">
+	$(function(){
+	let link = "https://rafaelescalfoni.github.io/desenv_web/filmes.json";
+	$.get(link, function(data){
+		console.log(data);
+		$.each(data, function(index, filme){
+			let $divCatalogo = $("<div>").addClass("catalogo");
+			let $figura = $("<img>").attr("src", filme.figura).addClass("figura");
+			let $titulo = $("<h1>").text(filme.titulo).addClass("titulo");
+			let $genero = $("<p>").text(filme.generos.join(", ")).addClass("generos");
+			let estrela = filme.opinioes[0].rating;
+			let $sinopse = $("<h1>").text(filme.resumo).addClass("sinopse");
+			let $elenco = $("<p>").text("Elenco: " + filme.elenco.join(", ")).addClass("elenco");
+			let $semelhantes = $("<p>").text("Títulos Semelhantes:").addClass("ts");
+
+
+			switch(estrela){
+				case 4: {
+					$estrela = $("<img>").attr("src", "4.png").addClass("estrela");
+				} break;
+				case 5: {
+					$estrela = $("<img>").attr("src", "5.png").addClass("estrela");
+				}
+			}
+
+
+			$divCatalogo.append($figura);
+			$divCatalogo.append($titulo);
+			let classificacao = filme.classificacao;
+			if(classificacao == 18){
+				$figClassificacao = $("<img>").attr("src", "18.png").addClass("classificacao");
+				$divCatalogo.append($figClassificacao);
+			}
+			else if(classificacao == 16){
+				$figClassificacao = $("<img>").attr("src", "16.png").addClass("classificacao");
+				$divCatalogo.append($figClassificacao);
+			}
+			else if(classificacao == 14){
+				$figClassificacao = $("<img>").attr("src", "14.png").addClass("classificacao");
+				$divCatalogo.append($figClassificacao);
+			}
+			else if(classificacao == 12){
+				$figClassificacao = $("<img>").attr("src", "12.png").addClass("classificacao");
+				$divCatalogo.append($figClassificacao);
+			}
+			else{
+				$figClassificacao = $("<img>").attr("src", "livre.png").addClass("classificacao");
+				$divCatalogo.append($figClassificacao);
+			}
+			$divCatalogo.append($estrela);
+			$divCatalogo.append($genero);
+			$divCatalogo.append($sinopse);
+			$divCatalogo.append($elenco);
+			$divCatalogo.append($semelhantes);
+			$.each(filme.titulosSemelhantes, function(idx, titulo){
+				let $tituloSemelhante = $("<li>").text("| " + data[titulo-1].titulo + " | ");
+				$tituloSemelhante.addClass("semelhantes");
+				$divCatalogo.append($tituloSemelhante);
+			});
+
+			$(".principal").append($divCatalogo);
+		})
+
+	});
+})
+	</script>
+</head>
+<body>
+	<h1 class="flix">NETINFLIX<br /><button><a href="../JavaScript.html">Voltar</a></button></h1>
+	<div class="principal"></div>
+</body>
+</html>

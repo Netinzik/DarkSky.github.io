@@ -1,0 +1,310 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Lora', cursive;
+}
+
+/*Química inicio de gases.html*/
+header{
+	position: absolute;
+	padding-top: 150px;
+	width: 100%;
+	z-index: 1000;
+}
+header h1{
+	color: #f5f5f5;
+	position: relative;
+	text-align: center;
+	font-weight: normal;
+	font-size: 80px;
+	font-style: italic;
+	box-shadow: 10px 5px 5px #0CF2DB;
+}
+header p{
+	color: #f5f5f5;
+	position: relative;
+	text-align: justify;
+	font-weight: normal;
+	font-size: 25px;
+	top: 20px;
+}
+/*Fim do header*/
+.banner-g{
+	width: 100%;
+	min-height: 700px;
+	padding: 50px 0 250px 0;
+	background: url(quimica/hidrogenio.jpg);
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	text-align: center;
+}
+.banner-g h5{
+	color: #f5f5f5;
+	top: 610px;
+	position: relative;
+	text-align: center;
+	font-weight: normal;
+	font-size: 25px;
+	font-style: italic;
+	text-align: right;
+}
+/*Fim do banner*/
+.conteudo{background-color: #f5f5f5; padding: 15px 15px 0 15px; color: #031926;}
+.conteudo > .container{padding-bottom: 15px; border-radius: 15px;}
+.conteudo h1{
+	position: relative;
+	top: 230px;
+	font-size: 50px;
+	text-shadow: 5px 5px 5px #0CB1F2;
+	font-weight: normal;
+}
+.conteudo p{
+	font-size: 20px;
+	line-height: 1.2em;
+	text-align: justify;
+}
+.img{
+	width: 350px;
+	height: auto;
+	border-radius: 25%;
+	border: 3px dotted #3E848C;
+	box-shadow: 10px 5px 5px #3E848C;
+}
+.conteudo h3{
+	line-height: 3.5em;
+	font-size: 30px;
+	font-weight: normal;
+	text-align: center;
+}
+.conteudo span{
+	font-style: italic;
+	font-size: 20px;
+}
+.conteudo ul{
+	list-style-type: none;
+	text-align: center;
+	line-height: 2.5em;
+	position: relative;
+}
+.conteudo li{font-size: 20px;}
+.img2{
+	width: 600px;
+	height: auto;
+	border-radius: 15px;
+	border: 3px dotted #3E848C;
+	box-shadow: 7px 3px 15px #3E848C;
+}
+.conteudo h4{
+	line-height: 3.5em;
+	font-size: 25px;
+	font-weight: normal;
+	text-align: center;
+}
+/*Fim do Conteudo*/
+.exercicio{background-color: #f5f5f5; padding: 15px 15px 0 15px; color: #031926;}
+.exercicio > .container{padding-bottom: 15px; border-radius: 15px;}
+.exercicio h1{
+	position: relative;
+	font-size: 50px;
+	text-shadow: 5px 5px 5px #0CB1F2;
+	font-weight: normal;
+}
+.exercicio p{
+	font-size: 20px;
+	line-height: 1.2em;
+	text-align: justify;
+}
+.img{
+	width: 350px;
+	height: auto;
+	border-radius: 25%;
+	border: 3px dotted #3E848C;
+	box-shadow: 10px 5px 5px #3E848C;
+}
+.exercicio h3{
+	line-height: 3.5em;
+	font-size: 30px;
+	font-weight: normal;
+	text-align: center;
+}
+.exercicio span{
+	font-style: italic;
+	font-size: 20px;
+}
+.exercicio ul{
+	list-style-type: none;
+	text-align: center;
+	line-height: 2.5em;
+	position: relative;
+}
+.exercicio li{font-size: 20px;}
+.img2{
+	width: 600px;
+	height: auto;
+	border-radius: 15px;
+	border: 3px dotted #3E848C;
+	box-shadow: 7px 3px 15px #3E848C;
+}
+.exercicio h4{
+	line-height: 3.5em;
+	font-size: 25px;
+	font-weight: normal;
+	text-align: center;
+}
+.exercicio button{
+	background-color: #f5f5f5;
+	border-radius: 15px;
+	border: 2px inset #084F8C;
+	padding: 5px;
+	width: 150px;
+	transition-duration: 1.5s;
+	transition-delay: 0.3s;
+	align-content: center;
+}
+.exercicio button:hover{
+	box-shadow: 4px 5px 15px #0C9AF2;
+	cursor: pointer;
+}
+/*Fim dos Exercicios*/
+.conteudo a{
+	text-decoration: none;
+	color: #031926;
+	font-size: 20px;
+}
+.conteudo button{
+	background-color: #f5f5f5;
+	border-radius: 15px;
+	border: 2px inset #084F8C;
+	padding: 5px;
+	width: 150px;
+	transition-duration: 1.5s;
+	transition-delay: 0.3s;
+	align-content: center;
+}
+.conteudo button:hover{
+	box-shadow: 4px 5px 15px #0C9AF2;
+}
+.conteudo a:hover{	
+	transition-duration: 2s;
+	transition-delay: 0.6s;
+}
+/*Fim de gases.html*/
+/*Inicio da solutos.html*/
+.solutos{
+	position: absolute;
+	padding-top: 150px;
+	width: 100%;
+	z-index: 1000;
+}
+.solutos h1{
+	color: #f5f5f5;
+	position: relative;
+	text-align: center;
+	font-weight: normal;
+	font-size: 80px;
+	font-style: italic;
+	box-shadow: 10px 5px 5px #D94A64;
+}
+.solutos p{
+	color: #f5f5f5;
+	position: relative;
+	text-align: justify;
+	font-weight: normal;
+	font-size: 25px;
+	top: 20px;
+}
+/*Fim do header*/
+.banner-s{
+	width: 100%;
+	min-height: 700px;
+	padding: 50px 0 250px 0;
+	background: url(quimica/dissolve.jpg);
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	text-align: center;
+}
+.banner-s h5{
+	color: #f5f5f5;
+	top: 610px;
+	position: relative;
+	text-align: center;
+	font-weight: normal;
+	font-size: 25px;
+	font-style: italic;
+	text-align: right;
+}
+/*Fim do Banner*/
+.conteudo_s{background-color: #f5f5f5; padding: 15px 15px 0 15px; color: #031926;}
+.conteudo_s > .container{padding-bottom: 15px; border-radius: 15px;}
+.conteudo_s h1{
+	position: relative;
+	top: 230px;
+	font-size: 50px;
+	text-shadow: 5px 5px 5px #8C2B4F;
+	font-weight: normal;
+}
+.conteudo_s p{
+	font-size: 20px;
+	line-height: 1.2em;
+	text-align: justify;
+}
+.conteudo_s h3{
+	line-height: 3.5em;
+	font-size: 30px;
+	font-weight: normal;
+	text-align: center;
+}
+.conteudo_s h4{
+	line-height: 3.5em;
+	font-size: 25px;
+	font-weight: normal;
+	text-align: center;
+}
+.img_s{
+	width: 60.8%;
+	height: auto;
+	border-radius: 15px;
+	border: 3px dotted #8C2B4F;
+	box-shadow: 10px 5px 5px #8C2B4F;
+	margin-top: 15px;
+}
+.borda > div{
+	border-radius: 15px;
+	border-bottom: 3px inset #6A2EA6;
+	border-right: 3px inset #6A2EA6;
+}
+.conteudo_s span{
+	font-style: italic;
+	font-size: 20px;
+	font-weight: bold;
+}
+/*Fim do Conteudo*/
+.conteudo_s a{
+	text-decoration: none;
+	color: #031926;
+	font-size: 20px;
+}
+.conteudo_s button{
+	background-color: #f5f5f5;
+	border-radius: 15px;
+	border: 2px inset #501D73;
+	padding: 5px;
+	width: 150px;
+	transition-duration: 1.5s;
+	transition-delay: 0.3s;
+	align-content: center;
+}
+.conteudo_s button:hover{
+	box-shadow: 4px 5px 15px #F25041;
+}
+.conteudo_s a:hover{	
+	transition-duration: 2s;
+	transition-delay: 0.6s;
+}
+/*Fim das simulações*/
+/*Fim do solutos.html*/

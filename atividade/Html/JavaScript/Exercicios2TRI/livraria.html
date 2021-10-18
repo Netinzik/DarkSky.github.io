@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Livraria</title>
+  <meta charset="utf-8">
+  <meta name="author" content="Sebastião Gonçalves Ferreira Neto e Filipe Quintanilha">
+  <meta name="keyword" content="JavaScript, Química, Ensino Médio, Indie" />
+  <meta name="description" content="Site construido para as matérias de Química e JavaScript" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,maximun-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="../../css/style2.css" />
+  <link rel="icon" href="../../css/js.png" type="image/x-icon" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Akaya+Telivigala&family=DotGothic16&family=Jura:wght@300&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<style>
+		#acervo img{
+    		width: 15px;
+    		height: 15px;
+		}
+	</style>
+	<script>
+		$(function (){
+			var acervoArray = new Array();
+			$("#botao").click(function () {
+				let tituloLivro = $("#titulo").val();
+				let descricaoDoLivro = $("#descricao").val();
+				let generoDoLivro = $("#genero").val();
+				let autorDoLivro = $("#autor").val();
+				$("#acervo").append($("<tr>").addClass("livro")
+					.append($("<td>").text(tituloLivro)).addClass("titulo")
+					.append($("<td>").text(descricaoDoLivro)).addClass("descricao")
+					.append($("<td>").text(generoDoLivro)).addClass("genero")
+					.append($("<td>").text(autorDoLivro)).addClass("autor")
+					.append($("<td>").append($("<img>").attr('src', 'lixeira.png'))));
+				$("#titulo").val("");
+				$("#descricao").val("");
+				$("#genero").val("");
+				$("#autor").val("");
+			})
+			$("#botao_apagar").click(function (){
+				$("#acervo").empty();
+			})
+			$("input[name=salvar_bd]").click(function (){
+				$('.livro').each(function (idx, obj){
+					let titulo = $(obj).children("td:nth-child(1)").text();
+					let descricao = $(obj).children("td:nth-child(2)").text();
+					let genero = $(obj).children("td:nth-child(3)").text();
+					let autor = $(obj).children("td:nth-child(4)").text();
+					var livro = {
+						"titulo": titulo, "descricao": descricao,
+						"genero": genero, "autor": autor
+					};
+					acervoArray.push(livro);
+					$("input[name=acervo_post]").val(JSON.stringify(acervoArray));
+					console.log(acervoArray);
+				});
+			});
+			$("#acervo").on("click", "img", function (){
+				$(this).parents("#acervo tr").remove();
+			})
+		})
+	</script>
+</head>
+<body>
+	<div class="container center Js_a">
+	<fieldset style="border-radius: 50px;">
+		<legend><h1>Cadastro de livros</h1></legend>
+		<input style="width: 22%; margin-top: 10px;" type="text" id="titulo" placeholder="titulo"><br>
+		<textarea style="width: 22%;" id="descricao"></textarea><br />
+		<select style="width: 22%;" id="genero">
+			<option value="Romance">Romance</option>
+			<option value="Drama">Drama</option>
+			<option value="Terror">Terror</option>
+			<option value="Ficção">Ficção</option>
+			<option value="Técnico">Técnico</option>
+		</select><br />
+		<input style="width: 22%;" type="text" id="autor" placeholder="autor">
+		<br /><br />
+		<button style="width: 15%; border-radius: 10px;" id="botao">Adicionar a lista</button><br /><br />
+	</fieldset>
+	<h1>Catálogo</h1>
+	<table style="position: relative; text-align: center; width: 100%;" id="acervo">
+		<tr>
+			<th class="teste">Título</th>
+			<th class="teste">Descrição</th>
+			<th class="teste">Gênero</th>
+			<th class="teste">Autor</th>
+			<th></th>
+		</tr>
+	</table>
+	<button style="width: 15%; border-radius: 5px; margin-top: 15px;" id="botao_apagar">Limpar a lista</button>
+	<br>
+	<br>
+	<form action="https://rafaelescalfoni.net/web/livros.php" method="post">
+		<input type="hidden" name="acervo_post">
+		<input class="submit" type="submit" value="Salvar no BD" name="salvar_bd">
+	</form>
+	<br />
+    <button style="margin-bottom: 15px;" class="voltar"><a href="../JavaScript.html">Voltar</a></button>
+    <br />
+    </div>
+</body>
+</html>
