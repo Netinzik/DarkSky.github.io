@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Desafio 5</title>
+  <meta charset="utf-8">
+  <meta name="author" content="Sebastião Gonçalves Ferreira Neto e Filipe Quintanilha">
+  <meta name="keyword" content="JavaScript, Química, Ensino Médio, Indie" />
+  <meta name="description" content="Site construido para as matérias de Química e JavaScript" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,maximun-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="../../css/style2.css" />
+  <link rel="icon" href="../../css/js.png" type="image/x-icon" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Akaya+Telivigala&family=DotGothic16&family=Jura:wght@300&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="container center Js_a">
+    <h1>5 - Dado o seguinte vetor de objetos: var usuarios = [ { nome: "Diego", habilidades: ["Javascript", "ReactJS", "Redux"] }, { nome: "Gabriel", habilidades: ["VueJS", "Ruby on Rails", "Elixir"] } ];<br />Escreva uma função que produza o seguinte resultado: O Diego possui as habilidades: Javascript, ReactJS, Redux. O Gabriel possui as habilidades: VueJS, Ruby on Rails, Elixir</h1>
+    <p id="msg"></p>
+    <br />
+    <button style="margin-bottom: 15px;" class="voltar"><a href="../JavaScript.html">Voltar</a></button>
+    <br />
+    </div>
+</body>
+<script>
+ 	var usuarios = [
+        {
+        	nome: "Diego",
+            habilidades: ["Javascript", "ReactJS", "Redux"]
+        },
+        {
+            nome: "Gabriel",
+            habilidades: ["VueJS", "Ruby on Rails", "Elixir"]
+        }
+    ];
+    function candidato(array){
+        for (var value of array) {
+            console.log('O', value.nome, 'possui as habilidades: ', value.habilidades.join(', '));
+        }
+    }
+    candidato(usuarios);
+</script>
+</html>
