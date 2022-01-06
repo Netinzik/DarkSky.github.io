@@ -1,0 +1,38 @@
+* {
+  font-family: "Poppins", "Montserrat", sans-serif;
+  background-color: rgb(255, 240, 213);
+  padding: 0;
+  margin: 0;
+}
+:root {
+  --corTextoPadrao: rgb(0, 0, 0);
+}
+
+.parallax{
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #7fffd4;
+    background-image: url("");
+    min-height: 500px; 
+}
+
+/* Shape Divider */
+.custom-shape-divider-top-1641500080 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+.custom-shape-divider-top-1641500080 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 106px;
+}
+.custom-shape-divider-top-1641500080 .shape-fill {
+    fill: #7FFFD4;
+}
