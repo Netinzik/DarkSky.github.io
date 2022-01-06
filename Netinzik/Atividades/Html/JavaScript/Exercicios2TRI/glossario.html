@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Glossário</title>
+  <meta charset="utf-8">
+  <meta name="author" content="Sebastião Gonçalves Ferreira Neto e Filipe Quintanilha">
+  <meta name="keyword" content="JavaScript, Química, Ensino Médio, Indie" />
+  <meta name="description" content="Site construido para as matérias de Química e JavaScript" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,maximun-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="../../css/style2.css" />
+  <link rel="icon" href="../../css/js.png" type="image/x-icon" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Akaya+Telivigala&family=DotGothic16&family=Jura:wght@300&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script>
+		$(function () {
+			var glossario = [{
+				"id": 1, "termo": "W3C"
+				, "definicao": "World Wide Web Consortium – escritório responsável por desenvolver normas técnicas para a Internet"
+				, "autor": "José Borges", "dataCriacao": "2015-04-01"
+			}
+				, {
+				"id": 2, "termo": "HTML"
+				, "definicao": "HyperText Markup Language – linguagem de marcação utilizada para estruturar páginas web"
+				, "autor": "Pedro Silva", "dataCriacao": "2017-05-12"
+			}
+				, {
+				"id": 3, "termo": "CSS"
+				, "definicao": "Cascade Style Sheet – Folhas de estilo utilizadas para configurar a visualização de  páginas web."
+				, "autor": "Maria Machado", "dataCriacao": "2018-10-11"
+			}
+			];
+
+			$(glossario).each(function (idx, termos) {
+				let titulo = termos.termo;
+				$("#termos")
+					.append(
+						$("<li>")
+							.text(titulo).attr("value", idx)
+					)
+				$("#termos").on("click", "li", function () {
+					let id = $(this).val();
+					$("#termo").text(glossario[id].termo);
+					$("#definicao").text(glossario[id].definicao);
+					$("#autor").text(glossario[id].autor);
+					$("#dataCriacao").text(glossario[id].dataCriacao);
+				})
+			})
+		});
+	</script>
+</head>
+<body>
+	<div class="container center Js_a">
+	<h1>Glossário</h1>
+	<p> Clique nos termos que você deseja conhecer!</p>
+	<ul style="margin-right: 2%; cursor: pointer;" id="termos"></ul>
+	<div style="font-weight: bold;">
+		<p id=termo></p>
+		<p id=definicao></p>
+		<p id=autor></p>
+		<p id=dataCriacao></p>
+	</div>
+	<br />
+    <button class="voltar"><a href="../JavaScript.html">Voltar</a></button>
+    <br />
+    </div>
+</body>
+</html>

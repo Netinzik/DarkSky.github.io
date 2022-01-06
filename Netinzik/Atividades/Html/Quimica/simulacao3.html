@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Simulação 3</title>
+	<meta charset="utf-8">
+	<meta name="author" content="Sebastião Gonçalves Ferreira Neto e Filipe Quintanilha">
+	<meta name="keyword" content="JavaScript, Química, Ensino Médio, Indie" />
+	<meta name="description" content="Site construido para as matérias de Química e JavaScript" />
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximun-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="../../css/atividades.css" />
+	<link rel="icon" href="../../css/quimica.png" type="image/x-icon" />
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;1,400;1,500&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body class="background_qm">
+	<div class="atv_qm">
+		<h2>Reações com reagente limitante</h2>
+		<p>Insira no primeiro campo o valor em gramas de H2 e no segundo o valor em gramas de O2 para descobrir qual é o reagente limitante, qual é o excedente e o produto final da correlação de formação de H2O.</p>
+        <input type="number" name="valor" id="hidrogenio"><br><br>
+		<input type="number" name="valor" id="oxigenio"><br><br>
+		<button style="width: 300px;" onclick="limitante();">Qual é o reagente limitante e o excedente?</button>
+        <div class="center">
+        	<p id="formula3"></p>
+			<p id="conta3"></p>
+			<p id="resul3"></p>
+			<p id="resultado3"></p>
+			<p id="formula3-1"></p>
+			<p id="conta3-1"></p>
+			<p id="resul3-1"></p>
+			<p id="resultado3-1"></p>
+			<p id ="textofinal"></p>
+			<p id ="produtofinal"></p>
+        </div>
+        <button class="voltar" type="button"><a href="../Quimica.html">Voltar</a></button>
+	</div>
+	<script type="text/javascript">
+		function limitante (){
+		var gO2 = document.getElementById("oxigenio").value;
+		var gH2 = document.getElementById("hidrogenio").value;
+		var g1H2O = parseFloat(9);
+		var g1H2 = parseFloat(1);
+		var g1O2 = parseFloat(0.5);
+
+		var h2oeh2 = (gH2*g1H2O)/g1H2;
+		var form3 = "Se 1 grama de H2 forma 9 gramas de H2O,<br>1 grama H2 ---> 9 gramas de H2O<br>"+gH2+" gramas H2 ---> X gramas H2O";
+		var conta3 = "X gramas H2O = ("+g1H2O+" x "+gH2+") /"+g1H2;
+		var res3 = "Resultado: X gramas H2O= "+h2oeh2;
+		var result3 = gH2+" gramas de H2 forma(m) "+h2oeh2+" gramas de H2O";
+		document.getElementById("formula3").innerHTML = form3;
+		document.getElementById("conta3").innerHTML = conta3;
+		document.getElementById("resul3").innerHTML = res3;
+		document.getElementById("resultado3").innerHTML = result3;
+
+		var h2oeo2 = (gO2*g1H2O)/g1O2;
+		var form31 = "Se 0,5 gramas de O2 forma 9 grama de H2O,<br>0,5 gramas O2 ---> 1 gramas de H2O<br>"+gO2+" gramas O2 ---> X gramas H2O";
+		var conta31 = "X gramas H2O = ("+g1H2O+" x "+gO2+") /"+g1O2;
+		var res31 = "Resultado: X gramas H2O= "+h2oeo2;
+		var result31 = gO2+" gramas de O2 formam "+h2oeo2+" gramas de H2O";
+		document.getElementById("formula3-1").innerHTML = form31;
+		document.getElementById("conta3-1").innerHTML = conta31;
+		document.getElementById("resul3-1").innerHTML = res31;
+		document.getElementById("resultado3-1").innerHTML = result31;
+
+		if( h2oeh2 > h2oeo2 ){
+			var limitanteexcedente = "O reagente limitante nessa correlação é o Oxigênio, enquanto o reagente excedente é o Hidrogênio.";
+			document.getElementById("textofinal").innerHTML = limitanteexcedente;
+			var produto = h2oeo2;
+		}
+		else if( h2oeh2 < h2oeo2 ){
+			var limitanteexcedente = "O reagente limitante nessa correlação é o Hidrogênio, enquanto o reagente excedente é o Oxigênio.";
+			document.getElementById("textofinal").innerHTML = limitanteexcedente;
+			var produto = h2oeh2;
+		}
+		else{
+			var sem = "Não há reagente limtante e nem excedente.";
+			document.getElementById("textofinal").innerHTML = sem;
+			var produto = h2oeo2;
+		}
+		var produtofinal = "Nesse caso, o produto final é igual a "+produto+" gramas de H2O";
+		document.getElementById("produtofinal").innerHTML = produtofinal;
+	}
+	</script>
+</body>
+</html>
