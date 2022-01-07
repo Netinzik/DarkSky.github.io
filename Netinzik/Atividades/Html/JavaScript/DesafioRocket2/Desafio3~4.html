@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Desafio 3 e 4</title>
+  <meta charset="utf-8">
+  <meta name="author" content="Sebastião Gonçalves Ferreira Neto e Filipe Quintanilha">
+  <meta name="keyword" content="JavaScript, Química, Ensino Médio, Indie" />
+  <meta name="description" content="Site construido para as matérias de Química e JavaScript" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,maximun-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="../../css/style2.css" />
+  <link rel="icon" href="../../css/js.png" type="image/x-icon" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Akaya+Telivigala&family=DotGothic16&family=Jura:wght@300&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="container center Js_a">
+        <ul id="list">
+        </ul>
+        <label for="newName">Nome: </label>
+        <input type="text" id="newName">
+        <button onclick="mais1()">Adicionar nome</button>
+        <br />
+        <br />
+        <button class="voltar"><a href="../JavaScript.html">Voltar</a></button>
+        <br />
+    </div>
+</body>
+<script>
+ 	var nomes = ["PEDRÃO", "NETÃO", "TIGRÃO"];   
+    function mais1() {
+        let newName = document.getElementById("newName").value;
+        nomes.push(newName);
+        let itens = document.querySelectorAll(".remover");
+        for(let x=0; x<=itens.length-1; x++){
+        itens[x].remove();
+    }
+    let input = document.getElementById("newName").value="";
+    preencher();
+    }
+    function preencher(){
+        let ul = document.getElementById("list");
+        for(let x=0; x<=nomes.length-1; x++){
+        let nome = document.createTextNode(nomes[x]);
+        let li = document.createElement("li");
+        li.classList.add("remover");
+        li.appendChild(nome);
+        ul.appendChild(li)
+        }
+    }
+</script>
+</html>

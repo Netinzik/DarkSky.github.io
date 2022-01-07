@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Laboratório de JQuery</title>
+  <meta charset="utf-8">
+  <meta name="author" content="Sebastião Gonçalves Ferreira Neto e Filipe Quintanilha">
+  <meta name="keyword" content="JavaScript, Química, Ensino Médio, Indie" />
+  <meta name="description" content="Site construido para as matérias de Química e JavaScript" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,maximun-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="../../../css/style2.css" />
+  <link rel="icon" href="../../../css/js.png" type="image/x-icon" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Akaya+Telivigala&family=DotGothic16&family=Jura:wght@300&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        var s_minusculas = /[a-z]/;
+        var s_maiusculas = /[A-Z]/;
+        var s_numeros = /[1-9]/;
+        var s_especiais = /[@#!$%&*()-+.,=]/;
+        $(function () {
+            $("#data").click(function () {
+                let frase = $("#frase").val();
+                if (frase != "") {
+                    let d1 = frase.substr(8, 2);
+                    let a1 = frase.substr(0, 4);
+                    let m1 = frase.substr(5, 2);
+                    const agora = new Date();
+                    const nascimento = new Date(a1, m1 - 1, d1);
+                    const diff = Math.abs(agora.getTime() - nascimento.getTime());
+                    const days = Math.ceil(diff / (1000 * 60 * 60 * 24));
+                    $("#texto1").text(" Quem nasceu no dia: " + d1 + "/" + m1 + "/" + a1 + " tem " + days + " dias de vida");
+                    $("#frase").val("");
+                }
+            })
+        })
+    </script>
+</head>
+<body>
+    <div class="container center Js_a">
+    <h1>Quantos dias de vida você tem?</h1>
+    <input type="date" id="frase">
+    <button id="data">enviar</button>
+    <p id="texto1"></p>
+    <br />
+    <button style="margin-bottom: 15px;" class="voltar"><a href="../../JavaScript.html">Voltar</a></button>
+    <br />
+    </div>
+</body>
+
+</html>

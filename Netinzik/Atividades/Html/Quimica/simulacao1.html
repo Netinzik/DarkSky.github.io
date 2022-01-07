@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Simulação 1</title>
+	<meta charset="utf-8">
+	<meta name="author" content="Sebastião Gonçalves Ferreira Neto e Filipe Quintanilha">
+	<meta name="keyword" content="JavaScript, Química, Ensino Médio, Indie" />
+	<meta name="description" content="Site construido para as matérias de Química e JavaScript" />
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximun-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="../../css/atividades.css" />
+	<link rel="icon" href="../../css/quimica.png" type="image/x-icon" />
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;1,400;1,500&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body class="background_qm">
+	<div class="atv_qm">
+		<h2>Transformações entre número de mol e massa</h2>
+		<h4>Ferro(Fe)</h4>
+		<p>Insira o valor e selecione uma das opções:</p><br>
+            <input type="number" name="valor" id="valor" placeholder="Valor: "><br><br>
+           	<button onclick="molparagrama();">MOL para Grama</button>
+	  		<button onclick="gramaparamol();">Grama para MOL</button>
+        <div class="center">
+        	<p id=formula></p>
+			<p id=conta></p>
+			<p id=resultado></p>
+        </div>
+        <button class="voltar" type="button"><a href="../Quimica.html">Voltar</a></button>
+	</div>
+	<script type="text/javascript">
+	function molparagrama (){
+		var mol = document.querySelector('body input').value;	
+		var sup = parseFloat(56);
+		var grama = mol*sup;
+		var form = "Massa(g) = Mol x Massa(56)";
+		var conta = "Massa(g) = "+mol+" x "+sup+" = "+grama;
+		var result = mol+" mol(s) de Ferro equivale(m) a "+grama+"grama(s).";
+		document.getElementById("formula").innerHTML = form;
+		document.getElementById("conta").innerHTML = conta;
+		document.getElementById("resultado").innerHTML = result;
+	}
+	function gramaparamol (){
+		var grama = document.querySelector('body input').value;	
+		var sup = parseFloat(56);
+		var mol = grama/sup;
+		var form = "Mol = Massa(g) / Massa Molar  -- Massa Molar do Enxofre: 32";
+		var conta = "Mol = "+grama+" / "+sup+" = "+mol;
+		var result = grama+" grama(s) de Ferro equivale(m) a "+mol+"mol(s).";
+		document.getElementById("formula").innerHTML = form;
+		document.getElementById("conta").innerHTML = conta;
+		document.getElementById("resultado").innerHTML = result;
+	}
+	</script>
+</body>
+</html>
