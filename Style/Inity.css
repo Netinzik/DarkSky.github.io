@@ -1,0 +1,35 @@
+* {
+  font-family: "Poppins", "Montserrat", sans-serif;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+:root {
+  --Preto: rgb(0, 0, 0);
+  --VerdeFundo: #238860;
+  --Branco: #e5f3ff;
+}
+html,
+body {
+  background-color: rgb(255 248 236);
+}
+a{
+  text-decoration: none;
+}
+
+
+/* Classes */
+
+.d-flex{
+  display: flex;
+  align-items: center;
+}
+.justify-between{
+  justify-content: space-between;
+}
+.justify-center{
+  justify-content: center;
+}
+.align-center{
+  align-items: center;
+}
