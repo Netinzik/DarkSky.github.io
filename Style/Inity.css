@@ -13,23 +13,51 @@ html,
 body {
   background-color: rgb(255 248 236);
 }
-a{
+a {
   text-decoration: none;
 }
 
+::-webkit-scrollbar {
+  width: 8px;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--Branco);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-track {
+  background-color: black;
+  border-radius: 4px;
+}
 
 /* Classes */
 
-.d-flex{
+.d-flex {
   display: flex;
   align-items: center;
 }
-.justify-between{
+.justify-between {
   justify-content: space-between;
 }
-.justify-center{
+.justify-center {
   justify-content: center;
 }
-.align-center{
+.justify-around {
+  justify-content: space-around;
+}
+.align-center {
   align-items: center;
+}
+
+/* Animated */
+
+.js .anime {
+  opacity: 0;
+  transform: translate3D(-200px, 0px, 0px);
+}
+
+.js .anime-init {
+  opacity: 1;
+  transform: translate3D(0px, 0px, 0px);
+  transition: 0.9s all ease-in-out;
 }

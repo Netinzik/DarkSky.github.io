@@ -27,28 +27,49 @@ section.banner{
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  min-height: 90vh;
-  position: absolute;
+  min-height: 90.8vh;
+  position: relative;
   width: 100%;
-  top: 10vh;
 }
 section.banner > h1{
   font-size: 2rem;
   color: var(--Branco);
 }
 
+section.info{
+  margin: 1% 10% 1% 10%;
+}
+section.info div > h2{
+  text-align: center;
+}
+section.info div > div{
+  text-align: justify;
+}
+section.info div > div:first-child{
+  margin-right: 1%;
+}
+section.info div > div:last-child{
+  margin-left: 1%;
+}
+section.info hr{
+  width: 45%;
+  display: inline-block;
+  border-color: red;
+}
+
 /* Shape Divider */
 .custom-shape-divider-top-1641583715 {
-  position: relative;
-  top: 0;
+  position: absolute;
+  top: 9vh;
   left: 0;
   width: 100%;
+  height: 100%;
   overflow: hidden;
   line-height: 0;
   z-index: 100;
 }
 .custom-shape-divider-top-1641583715 svg {
-  position: relative;
+  position: absolute;
   display: block;
   width: calc(100% + 1.3px);
   height: 106px;
