@@ -18,8 +18,11 @@ nav.navInicial > div.listaNav > ul > li{
 }
 nav.navInicial > div.listaNav > ul > li > a{
   color: var(--Preto);
-  font-size: 1.3rem;
+  font-size: 1.15rem;
   font-weight: 500;
+}
+nav.navInicial > div.listaNav > ul > li > a:hover{
+  border-bottom: 2px solid salmon;
 }
 
 section.banner{
@@ -54,7 +57,11 @@ section.info div > div:last-child{
 section.info hr{
   width: 45%;
   display: inline-block;
-  border-color: red;
+  border-color: var(--AzulEscuro);
+}
+img.img-reference{
+  max-width: 230px;
+  height: auto;
 }
 
 /* Shape Divider */
