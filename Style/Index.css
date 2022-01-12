@@ -14,17 +14,33 @@ nav.navInicial > div.listaNav > ul{
   display: inline-flex;
 }
 nav.navInicial > div.listaNav > ul > li{
-  padding: 0 10px;
+  padding: 0px 10px;
 }
 nav.navInicial > div.listaNav > ul > li > a{
   color: var(--Preto);
   font-size: 1.15rem;
   font-weight: 500;
+  position: relative;
 }
-nav.navInicial > div.listaNav > ul > li > a:hover{
-  border-bottom: 2px solid salmon;
+nav.navInicial > div.listaNav > ul > li > a:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: var(--Rosa);
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.5s ease-in-out 0s;
+  transition: all 0.5s ease-in-out 0s;
 }
-
+nav.navInicial > div.listaNav > ul > li > a:hover::before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
 section.banner{
   background-image: url(../Images/Banner/home.jpg);
   background-size: cover;
@@ -56,12 +72,21 @@ section.info div > div:last-child{
 }
 section.info hr{
   width: 45%;
-  display: inline-block;
-  border-color: var(--AzulEscuro);
+  display: inline-flex;
+  border-color: var(--Azul);
+
+}
+section.info hr:nth-child(1){
+  width: 80%;
 }
 img.img-reference{
-  max-width: 230px;
+  max-height: 130px;
   height: auto;
+}
+
+span.fonte > a{
+  color: var(--Roxo);
+  position: relative;
 }
 
 /* Shape Divider */

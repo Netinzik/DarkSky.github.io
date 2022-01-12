@@ -4,11 +4,13 @@
   margin: 0;
   list-style-type: none;
 }
-:root {
-  --Preto: rgb(0, 0, 0);
-  --VerdeFundo: #238860;
-  --Branco: #e5f3ff;
-  --AzulEscuro: #0c1524;
+:root { 
+  --Preto: #000000;
+  --Verde: #93C088;
+  --Branco: #E8F6FA;
+  --Azul: #9DD2EB;
+  --Rosa: #E9B0EB;
+  --Roxo: #2B0A15;
 }
 html,
 body {
