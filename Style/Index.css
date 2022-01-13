@@ -1,0 +1,125 @@
+@import url("Inity.css");
+
+nav.navInicial {
+  background-color: var(--Branco);
+  padding: 5px 10px 0 15px;
+}
+nav.navInicial > div.imagenLogo > img {
+  width: 8vh;
+  height: auto;
+}
+nav.navInicial > div.listaNav > ul{
+  display: inline-flex;
+}
+nav.navInicial > div.listaNav > ul > li{
+  padding: 0px 10px;
+}
+nav.navInicial > div.listaNav > ul > li > a{
+  color: var(--Preto);
+  font-size: 1.15rem;
+  font-weight: 500;
+  position: relative;
+}
+nav.navInicial > div.listaNav > ul > li > a:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: var(--Rosa);
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.5s ease-in-out 0s;
+  transition: all 0.5s ease-in-out 0s;
+}
+nav.navInicial > div.listaNav > ul > li > a:hover::before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+section.banner{
+  background-image: url(../Images/Banner/home.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  min-height: 90.8vh;
+  position: relative;
+  width: 100%;
+}
+section.banner > h1{
+  font-size: 2rem;
+  color: var(--Branco);
+}
+section.info{
+  margin: 1% 10% 1% 10%;
+}
+section.info div > h2{
+  text-align: center;
+}
+section.info div > div{
+  text-align: justify;
+}
+section.info div > div:first-child{
+  margin-right: 1%;
+}
+section.info div > div:last-child{
+  margin-left: 1%;
+}
+section.info hr{
+  width: 45%;
+  display: inline-flex;
+  border-color: var(--Azul);
+
+}
+section.info hr:nth-child(1){
+  width: 80%;
+}
+img.img-reference{
+  max-height: 130px;
+  height: auto;
+}
+span.fonte > a{
+  color: var(--Roxo);
+  position: relative;
+}
+section.autor hr{
+  width: 45%;
+  border-color: var(--Azul);
+}
+img.img-autor{
+  max-height: 300px;
+}
+div.background-image-autor{
+  background-image: url("../Images/Banner/pattern2.png");
+  background-repeat: repeat;
+  width: 60%;
+  margin: 0 20%;
+  border-radius: 55px;
+  height: auto;
+}
+
+
+/* Shape Divider */
+.custom-shape-divider-top-1641583715 {
+  position: absolute;
+  top: 9vh;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  line-height: 0;
+  z-index: 100;
+}
+.custom-shape-divider-top-1641583715 svg {
+  position: absolute;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 106px;
+  transform: rotateY(180deg);
+  z-index: 100;
+}
+.custom-shape-divider-top-1641583715 .shape-fill {
+  fill:  var(--Branco);
+}
